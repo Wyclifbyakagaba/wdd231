@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>WDD231 Home Page</title>
+  <meta name="description" content="Course Home Page for WDD231">
+  <meta name="author" content="Your Name">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/course.js" defer></script>
+</head>
+
+<body>
+
+  <header>
+    <img src="images/logo.svg" alt="Site Logo">
+    <span>Your Name</span>
+    <button id="menuBtn">☰</button>
+  </header>
+
+  <nav id="navMenu">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Chamber</a></li>
+      <li><a href="#">Final</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Home</h1>
+
+    <section>
+      <h2>About Me</h2>
+      <p>Write something about yourself.</p>
+    </section>
+
+    <section>
+      <h2>Courses</h2>
+      <div>
+        <button id="all">All</button>
+        <button id="wdd">WDD</button>
+        <button id="cse">CSE</button>
+      </div>
+
+      <div id="courses"></div>
+      <p>Total Credits: <span id="credits"></span></p>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <p>Links to your work.</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>
+      © <span id="year"></span> Your Name, Uganda
+    </p>
+
+    <p id="lastModified"></p>
+  </footer>
+
+</body>
+
+</html>
