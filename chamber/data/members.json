@@ -4,7 +4,7 @@
         "address": "Kampala Road",
         "phone": "+256700111222",
         "website": "https://kampalatech.com",
-        "image": "tech.jpg",
+        "image": "kampala-Tech.jpg",
         "membership": 3
     },
     {
@@ -12,7 +12,7 @@
         "address": "Jinja Road",
         "phone": "+256701222333",
         "website": "https://ugandasafari.com",
-        "image": "safari.jpg",
+        "image": "uganda-safari.jpg",
         "membership": 2
     },
     {
@@ -20,7 +20,7 @@
         "address": "Ntinda",
         "phone": "+256702333444",
         "website": "https://pearlrestaurant.com",
-        "image": "restaurant.jpg",
+        "image": "pearl-restaurant.jpg",
         "membership": 1
     },
     {
@@ -28,7 +28,7 @@
         "address": "Entebbe",
         "phone": "+256703444555",
         "website": "https://lakeviewhotel.com",
-        "image": "hotel.jpg",
+        "image": "lake-view-hotel.jpg",
         "membership": 3
     },
     {
@@ -36,7 +36,7 @@
         "address": "Kabale",
         "phone": "+256704555666",
         "website": "https://gorillaadventures.com",
-        "image": "gorilla.jpg",
+        "image": "gorilla-adventures.jpg",
         "membership": 2
     },
     {
@@ -44,7 +44,7 @@
         "address": "Wandegeya",
         "phone": "+256705666777",
         "website": "https://freshmarket.com",
-        "image": "market.jpg",
+        "image": "fresh-market.jpg",
         "membership": 1
     },
     {
@@ -52,7 +52,7 @@
         "address": "Jinja",
         "phone": "+256706777888",
         "website": "https://niletransport.com",
-        "image": "transport.jpg",
+        "image": "nile-transport.jpg",
         "membership": 2
     }
 ]
