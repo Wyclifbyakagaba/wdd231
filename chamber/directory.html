@@ -11,26 +11,33 @@
         content="Kampala Chamber of Commerce directory page showcasing local businesses and services.">
     <meta name="author" content="Byakagaba Wycliff">
 
-    <!-- Facebook Meta -->
+    <!-- Open Graph Meta -->
     <meta property="og:title" content="Kampala Chamber Directory">
     <meta property="og:description" content="Explore Kampala business members and services.">
-    <meta property="og:image" content="images/chamber.jpg">
-    <meta property="og:url" content="https://yourusername.github.io/wdd231/chamber/directory.html">
+    <!-- FIXED  ABSOLUTE URL -->
+      <meta property="og:image"
+        content="https://wyclifbyakagaba.github.io/wdd231/chamber/images/chamber.jpg">
 
     <!-- Favicon -->
     <link rel="icon" href="images/favicon.ico">
 
+   <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
     <!-- CSS -->
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/small.css">
-    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script src="scripts/directory.js"></script>
 </head>
 
 <body>
 
     <header>
-        <h1>Kampala Chamber of Commerce</h1>
-
+        
         <button id="menuBtn">☰</button>
 
         <nav id="navMenu">
@@ -44,6 +51,8 @@
     </header>
 
     <main>
+        <!--MOVED INTO MAIN-->
+        <h1>Kampala Chamber of Commerce</h1>
 
         <h2>Business Directory</h2>
 
@@ -61,7 +70,7 @@
         <p id="lastModified"></p>
     </footer>
 
-    <script src="js/directory.js"></script>
+
 </body>
 
 </html>

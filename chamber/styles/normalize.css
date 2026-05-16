@@ -1,0 +1,44 @@
+/* =========================
+   Normalize CSS (Custom Lite Version)
+   Works with Chamber Directory Project
+   ========================= */
+
+/* Remove default margins and padding */
+html, body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set box sizing globally */
+* {
+    box-sizing: border-box;
+}
+
+/* Body reset */
+body {
+    line-height: 1.5;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Lists */
+ul {
+    list-style: none;
+}
+
+/* Buttons */
+button {
+    cursor: pointer;
+    font-family: inherit;
+}

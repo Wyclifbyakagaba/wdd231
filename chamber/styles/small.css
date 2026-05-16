@@ -1,9 +1,12 @@
+/* Small screen styles for Kampala Chamber Directory */
+ 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
     margin: 0;
 }
 
-header, footer {
+header,
+footer {
     background: #004d40;
     color: white;
     padding: 1rem;
@@ -13,6 +16,12 @@ header, footer {
 nav ul {
     list-style: none;
     padding: 0;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 nav a {

@@ -1,5 +1,21 @@
 const membersContainer = document.querySelector("#members");
 
+document.querySelector("#gridBtn").addEventListener("click", () => {
+    membersContainer.classList.add("grid");
+    membersContainer.classList.remove("list");
+});
+
+document.querySelector("#listBtn").addEventListener("click", () => {
+    membersContainer.classList.add("list");
+    membersContainer.classList.remove("grid");
+});
+
+document.querySelector("#year").textContent = new Date().getFullYear();
+
+document.querySelector("#lastModified").textContent =
+    `Last Modified: ${document.lastModified}`;
+});
+
 async function getMembers() {
     const response = await fetch("data/members.json");
     const data = await response.json();
@@ -40,4 +56,4 @@ document.querySelector("#listBtn").addEventListener("click", () => {
 document.querySelector("#year").textContent = new Date().getFullYear();
 
 document.querySelector("#lastModified").textContent =
-`Last Modified: ${document.lastModified}`;
+    `Last Modified: ${document.lastModified}`;
