@@ -1,5 +1,5 @@
 const membersContainer = document.querySelector("#members");
-document.addEventListener("DOMContentLoaded"); () => {
+document.addEventListener("DOMContentLoaded", () => {
 
     getMembers();
 
@@ -32,9 +32,9 @@ async function getMembers() {
 }
 function displayMembers(members) {
     membersContainer.innerHTML = ""; // Clear existing content
-    members.forEach(member => {
 
-        const card = document.createElement("section");
+    members.forEach(member => {
+      const card = document.createElement("section");
 
         card.innerHTML = `
             <img src="images/${member.image}" alt="${member.name}" loading="lazy">
