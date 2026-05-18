@@ -1,22 +1,22 @@
 const membersContainer = document.querySelector("#members");
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded"); () => {
 
-    getMembers(
+    getMembers();
 
-document.querySelector("#gridBtn").addEventListener("click", () => {
-    membersContainer.classList.add("grid");
-    membersContainer.classList.remove("list");
-});
+    document.querySelector("#gridBtn").addEventListener("click", () => {
+        membersContainer.classList.add("grid");
+        membersContainer.classList.remove("list");
+    });
 
-document.querySelector("#listBtn").addEventListener("click", () => {
-    membersContainer.classList.add("list");
-    membersContainer.classList.remove("grid");
-});
+    document.querySelector("#listBtn").addEventListener("click", () => {
+        membersContainer.classList.add("list");
+        membersContainer.classList.remove("grid");
+    });
 
-document.querySelector("#year").textContent = new Date().getFullYear();
+    document.querySelector("#year").textContent = new Date().getFullYear();
 
-document.querySelector("#lastModified").textContent =
-    `Last Modified: ${document.lastModified}`;
+    document.querySelector("#lastModified").textContent =
+        `Last Modified: ${document.lastModified}`;
 };
 
 async function getMembers() {
@@ -24,15 +24,11 @@ async function getMembers() {
         const response = await fetch("data/members.json");
         const data = await response.json();
 
-   if (response.ok) {
-        displayMembers(cannot load json data);
+        displayMembers(data);
 
-    }
-    const data = await response.json();
-        displayMembers(data.members);
-        catch (error) {
+    } catch (error) {
         console.error("Error fetching members data:", error);
-}
+    }
 }
 function displayMembers(members) {
     membersContainer.innerHTML = ""; // Clear existing content
