@@ -51,5 +51,4 @@ function displayMembers(members) {
 
         membersContainer.appendChild(card);
     });
-}
-
+} 
