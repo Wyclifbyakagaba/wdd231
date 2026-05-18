@@ -1,30 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Kampala Chamber Directory</title>
-
-    <meta name="description"
-        content="Kampala Chamber of Commerce directory page showcasing local businesses and services.">
-    <meta name="author" content="Byakagaba Wycliff">
-
-    <!-- Open Graph Meta -->
-    <meta property="og:title" content="Kampala Chamber Directory">
-
-    <meta property="og:description"
-        content="Discover trusted Kampala Chamber members, services, and business opportunities across the city.">
-    <meta property="og:url" content="https://wyclifbyakagaba.github.io/wdd231/chamber/directory.html">
-
-    <meta property="og:image" content="https://wyclifbyakagaba.github.io/wdd231/chamber/images/chamber.jpg">
-
-     <!--This  is Favicon -->
-    <img src="images/favicon.png" alt="Favicon" class="icon">
-
-     <!-- Google Fonts -->
+<!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -35,7 +10,7 @@
     <link rel="stylesheet" href="styles/large.css">
 
     <script src="scripts/directory.js" defer></script>
-    <script src="scripts/members.js" defer></script>
+    <script src="scripts/members.json" defer></script>
  </head>
 
 <body>
@@ -43,7 +18,9 @@
     <header>
         <!-- Logo image -->
        <img src="images/chamber.jpg"  alt="Kampala Chamber Logo" class="logo">
-       
+        <div id="members"></div>
+        <button id="gridBtn">Grid View</button>
+        <button id="listBtn">List View</button>
        <button id="menuBtn">☰</button>
 
         <nav id="navMenu">
