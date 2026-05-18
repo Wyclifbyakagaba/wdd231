@@ -22,6 +22,11 @@ document.addEventListener("DOMContentLoaded"), () => {
 async function getMembers() {
     try {
         const response = await fetch("data/members.json");
+
+        if (!response.ok) {
+            throw new Error("Failed to load JSON file");
+        }
+
         const data = await response.json();
 
         displayMembers(data);
@@ -34,7 +39,7 @@ function displayMembers(members) {
     membersContainer.innerHTML = ""; // Clear existing content
 
     members.forEach(member => {
-      const card = document.createElement("section");
+        const card = document.createElement("section");
 
         card.innerHTML = `
             <img src="images/${member.image}" alt="${member.name}" loading="lazy">
