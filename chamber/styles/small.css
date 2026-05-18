@@ -35,7 +35,7 @@ nav a {
 }
 
 #members.list section {
-    display: block;
+    display: none;
     margin: 1rem;
 }
 
