@@ -1,5 +1,5 @@
 const membersContainer = document.querySelector("#members");
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded"), () => {
 
     getMembers();
 
