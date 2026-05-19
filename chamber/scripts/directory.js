@@ -1,44 +1,16 @@
 const membersContainer = document.querySelector("#members");
-document.addEventListener("DOMContentLoaded"), () => {
-
-    getMembers();
-
-    document.querySelector("#gridBtn").addEventListener("click", () => {
-        membersContainer.classList.add("grid");
-        membersContainer.classList.remove("list");
-    });
-
-    document.querySelector("#listBtn").addEventListener("click", () => {
-        membersContainer.classList.add("list");
-        membersContainer.classList.remove("grid");
-    });
-
-    document.querySelector("#year").textContent = new Date().getFullYear();
-
-    document.querySelector("#lastModified").textContent =
-        `Last Modified: ${document.lastModified}`;
-};
 
 async function getMembers() {
-    try {
-        const response = await fetch("data/members.json");
+    const response = await fetch("data/members.json");
+    const data = await response.json();
 
-        if (!response.ok) {
-            throw new Error("Failed to load JSON file");
-        }
+    displayMembers(data);
 
-        const data = await response.json();
-
-        displayMembers(data);
-
-    } catch (error) {
-        console.error("Error fetching members data:", error);
-    }
 }
-function displayMembers(members) {
-    membersContainer.innerHTML = ""; // Clear existing content
 
+function displayMembers(members) {
     members.forEach(member => {
+
         const card = document.createElement("section");
 
         card.innerHTML = `
@@ -52,4 +24,19 @@ function displayMembers(members) {
 
         membersContainer.appendChild(card);
     });
-} 
+}
+getMembers();
+
+document.querySelector("#gridBtn").addEventListener("click", () => {
+    membersContainer.classList.add("grid");
+    membersContainer.classList.remove("list");
+});
+
+document.querySelector("#listBtn").addEventListener("click", () => {
+    membersContainer.classList.add("list");
+    membersContainer.classList.remove("grid");
+});
+
+document.querySelector("#year").textContent = new Date().getFullYear();
+document.querySelector("#lastModified").textContent =
+    `Last Modified: ${document.lastModified}`;
