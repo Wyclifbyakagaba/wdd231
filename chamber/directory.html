@@ -18,13 +18,12 @@
 <body>
 
     <header>
+        <!--Member Image TO HEADER-->
+        <h1>Kampala Chamber of Commerce</h1>
+        <button id="menuBtn">☰</button>
         <!-- Logo image -->
        <img src="images/chamber.jpg"  alt="Kampala Chamber Logo" class="logo">
-
-      <!--Member Image TO HEADER-->
-        <h1>Kampala Chamber of Commerce</h1>
-
-        <nav id="navMenu">
+    <nav id="navMenu">
             <ul>
                 <li><a href="directory.html" class="active">Directory</a></li>
                 <li><a href="#">Home</a></li>
@@ -32,10 +31,12 @@
                 <li><a href="#">Join</a></li>
             </ul>
         </nav>
-          <h2>Business Directory</h2>
+    </header>
 
-         <div class="view-buttons">
-            <button id="menuBtn">☰</button>
+    <main>
+     <h2>Business Directory</h2>
+
+        <div class="view-buttons">
             <button id="gridBtn">Grid View</button>
             <button id="listBtn">List View</button>
 
@@ -43,24 +44,9 @@
          <div id="members"></div>
            <button id="gridBtn">Grid View</button>
            <button id="listBtn">List View</button>
-         </div>
-
-    </header>
-
-    <main>
-        <!--Member Image TO HEADER-->
-        <h1>Kampala Chamber of Commerce</h1>
-
-        <h2>Business Directory</h2>
-
-        <div class="view-buttons">
-            <button id="gridBtn">Grid View</button>
-            <button id="listBtn">List View</button>
         </div>
-
-        <div id="members" class="grid"></div>
-
-    </main>
+         <div id="members" class="grid"></div>
+</main>
 
     <footer>
         <p>&copy; <span id="year"></span> Kampala Chamber | Byakagaba Wycliff | WDD 231</p>
