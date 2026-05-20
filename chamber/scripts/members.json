@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Kampala Tech Solutions",
+        "address": "Kampala Road",
+        "phone": "+256700111222",
+        "website": "https://kampalatech.com",
+        "image": "kampala-Tech.jpg",
+        "membership": 3
+    },
+    {
+        "name": "Uganda Safari Tours",
+        "address": "Jinja Road",
+        "phone": "+256701222333",
+        "website": "https://ugandasafari.com",
+        "image": "uganda-safari.jpg",
+        "membership": 2
+    },
+    {
+        "name": "Pearl Restaurant",
+        "address": "Ntinda",
+        "phone": "+256702333444",
+        "website": "https://pearlrestaurant.com",
+        "image": "pearl-restaurant.jpg",
+        "membership": 1
+    },
+    {
+        "name": "Lake View Hotel",
+        "address": "Entebbe",
+        "phone": "+256703444555",
+        "website": "https://lakeviewhotel.com",
+        "image": "lake-view-hotel.jpg",
+        "membership": 3
+    },
+    {
+        "name": "Gorilla Adventures",
+        "address": "Kabale",
+        "phone": "+256704555666",
+        "website": "https://gorillaadventures.com",
+        "image": "gorilla-adventures.jpg",
+        "membership": 2
+    },
+    {
+        "name": "Fresh Market",
+        "address": "Wandegeya",
+        "phone": "+256705666777",
+        "website": "https://freshmarket.com",
+        "image": "fresh-market.jpg",
+        "membership": 1
+    },
+    {
+        "name": "Nile Transport Services",
+        "address": "Jinja",
+        "phone": "+256706777888",
+        "website": "https://niletransport.com",
+        "image": "nile-transport.jpg",
+        "membership": 2
+    }
+]
