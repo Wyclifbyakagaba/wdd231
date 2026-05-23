@@ -1,14 +1,10 @@
 @media screen and (min-width: 768px) {
-    /*--Spreads your directory cards into a 3-column layout grid *
+    nav ul { flex-direction: row; justify-content: center; gap: 2.5rem; }
     #members.grid {
         grid-template-columns: repeat(3, 1fr);
         gap : 2rem;
         padding: 3rem 2rem;
     }
- ?* keep the navigation links centered and spaced out on larger screens*/
-    nav ul {
-        display: flex;
-        justify-content: center;
-        gap: 2rem;
+    #members.grid section h3 { font-size: 1.8rem; }
+    
     }
-}

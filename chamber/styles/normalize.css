@@ -4,26 +4,26 @@
    ========================= */
 
 /* Remove default margins and padding */
-html, body, h1, h2, h3, p, ul, li {
+ html {line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+body {                             
     margin: 0;
     padding: 0;
-}
-
-/* Set box sizing globally */
-* {
-    box-sizing: border-box;
-}
-
-/* Body reset */
-body {
     line-height: 1.5;
-    font-family: 'Roboto', Arial, sans-serif;
+    font-family:'Roboto', Arial, sans-serif;
 }
-
+ h1, h2, h3, h4, h5, h6, p, ul, ol, li, figure {
+  margin: 0;
+  padding: 0;
+}
+*{ box-sizing: border-box;
+}
 /* Images */
 img {
     max-width: 100%;
     display: block;
+    height: auto;
 }
 
 /* Links */
@@ -41,4 +41,6 @@ ul {
 button {
     cursor: pointer;
     font-family: inherit;
+    border:none;
+    background: none;
 }
