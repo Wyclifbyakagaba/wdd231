@@ -1,5 +1,7 @@
-/* Small screen styles for Kampala Chamber Directory */
- 
+/* ==========================================
+   1. GLOBAL STYLES (Used by BOTH pages)
+   ========================================== */
+
 body {
     font-family: 'Roboto', Arial, sans-serif;
     margin: 0;
