@@ -1,0 +1,53 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+header,
+footer {
+    background-color: #004d40;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.logo {
+    width: 120px;
+}
+
+#menuBtn {
+    background: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+nav a {
+    display: block;
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover,
+.active {
+    background-color: #00695c;
+}
+
+main {
+    padding: 1rem;
+}
+
+.hero {
+}
