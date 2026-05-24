@@ -38,7 +38,7 @@ nav a {
     grid-template-columns: 1fr;
     gap: 1rem;
     padding: 1rem;
-    background-color: #4f4ede;
+    background-color: #f4ede4;
 }
 /*card Elements for grid layout*/
 #members.grid section {
@@ -51,5 +51,23 @@ nav a {
     text-align: center;
 
 }
+/* ==========================================
+   2. NEW: DIRECTORY CARD COMPONENTS & BADGES
+   ========================================== */
 
+/* Gives the badge text some padding and curves the corners */
+.badge {
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    margin-top: 0.75rem;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    border-radius: 4px;
+}
+
+/* ADDED PERFECTLY HERE AT THE BOTTOM */
+.badge.general { background-color: #757575; color: white; }
+.badge.silver { background-color: #b0bec5; color: black; }
+.badge.gold { background-color: #ffd700; color: black; font-weight: bold; }
+.badge.platinum { background-color: #e5e4e2; color: black; font-weight: bold; }
 

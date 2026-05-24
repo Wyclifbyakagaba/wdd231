@@ -5,7 +5,7 @@
         "phone": "+256700111222",
         "website": "https://kampalatech.com",
         "image": "kampala-Tech.jpg",
-        "membership": 3
+        "membership": 1
     },
     {
         "name": "Uganda Safari Tours",
@@ -21,7 +21,7 @@
         "phone": "+256702333444",
         "website": "https://pearlrestaurant.com",
         "image": "pearl-restaurant.jpg",
-        "membership": 1
+        "membership": 3
     },
     {
         "name": "Lake View Hotel",
@@ -29,7 +29,7 @@
         "phone": "+256703444555",
         "website": "https://lakeviewhotel.com",
         "image": "lake-view hotel.jpg",
-        "membership": 3
+        "membership": 4
     },
     {
         "name": "Gorilla Adventures",
@@ -37,7 +37,7 @@
         "phone": "+256704555666",
         "website": "https://gorillaadventures.com",
         "image": "gorilla-adventures.jpg",
-        "membership": 2
+        "membership": 5
     },
     {
         "name": "Fresh Market",
@@ -45,7 +45,7 @@
         "phone": "+256705666777",
         "website": "https://freshmarket.com",
         "image": "fresh-market.jpg",
-        "membership": 1
+        "membership": 7
     },
     {
         "name": "Nile Transport Services",
@@ -53,6 +53,6 @@
         "phone": "+256706777888",
         "website": "https://niletransport.com",
         "image": "nile-transport.jpg",
-        "membership": 2
+        "membership": 6
     }
 ]

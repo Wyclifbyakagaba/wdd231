@@ -13,19 +13,35 @@ function displayMembers(members) {
     membersContainer.innerHTML = "";
 
     members.forEach(member => {
-
         const card = document.createElement("section");
         // 1. ADD A CLASS TO THE CARD BASED ON THE MEMBERSHIP LEVEL
         card.classList.add("directory-card");
 
-       // 2.  Add target style classes to the button, text elements, and badge
+       // 2 .CONVERT NUMERICAL MEMBERSHIP TO STRING VALUES
+        let tierName = "General Member";
+        let tierClass = "Member";
+
+        if (member.membership === 1) {
+            tierName = "General";
+            tierClass = "general";
+        } else if (member.membership === 2) {
+            tierName = "Silver";
+            tierClass = "silver";
+        } else if (member.membership === 3) {
+            tierName = "Gold";
+            tierClass = "gold";
+        } else if (member.membership === 4) {
+            tierName = "Platinum";
+            tierClass = "platinum";
+        }
+        // 3. GENERATE THE TARGET CARD ELEMENTS WITH DESIGN CLASSES
         card.innerHTML = `
             <img src="images/${member.image}" alt="${member.name}" loading="lazy">
             <h3>${member.name}</h3>
-            <p>${member.address}</p>
-            <p>${member.phone}</p>
-            <a href="${member.website}" target="_blank">Visit Website</a>
-            <p>Membership Level: ${member.membership}</p>
+            <a href="${member.website}" target="_blank" class="website-btn">Visit Website</a>
+            <p class="address-text">${member.address}</p>
+            <p class="phone-text">${member.phone}</p>
+            <span class="badge ${tierClass}">${tierName}</span>
         `;
 
         membersContainer.appendChild(card);

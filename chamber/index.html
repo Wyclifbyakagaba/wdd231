@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kampala Chamber of Commerce | Home</title>
+    <title>Kampala Chamber of Commerce | Home page</title>
     <meta name="description" content="Welcome to the Kampala Chamber of Commerce home page. Connecting businesses, driving growth.">
     <meta name="author" content="Byakagaba Wycliff">
     <link rel="icon" href="images/favicon.png" type="image/x-icon">
@@ -22,16 +22,15 @@
     <link rel="stylesheet" href="styles/large.css" media="screen and (min-width: 768px)">
 
     <script src="scripts/home.js" defer></script>
-    <meta name="theme-color" content="#ffffff">
-
- </head>
-<body>
+  </head>
+ <body>
     <header>
         <img src="images/chamber.jpg" alt="Kampala Chamber Logo" class="logo">
+        <button id="menuBtn" aria-label="Toggle Menu">☰</button>
         <nav id="navMenu">
             <ul>
                 <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="directory.html">Directory</a></li>
+              <li><a href="directory.html">Directory</a></li>
                 <li><a href="#">Discover</a></li>
                 <li><a href="#">Join</a></li>
                 <li><a href="#">Contact</a></li>
@@ -41,9 +40,13 @@
 
     <main class="home-main">
         <section class="hero-block">
-            <img src="images/chamber.jpg" alt="Kampala City Skyline Hero Banner" class="hero-img">
-            <div class="view-buttons">
-              <button id="menuBtn">☰</button>
+            <img src="images/chamber.jpg" alt="Kampala Tech solutions">
+
+            <div class="cta-overlay">
+                <h1>Empowering Kampala's Business Community</h1>
+                <p>Connecting enterprises, driving growth, and fostering innovation across the city.</p>
+                <a href="#" class="cta-btn">Join the Chamber</a>
+              <button id="menuBtn" aria-label="Toggle Menu">☰</button>
                <button id="gridBtn">Grid View</button>
                <button id="listBtn">List View</button>
             </div>
