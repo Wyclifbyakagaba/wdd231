@@ -127,3 +127,10 @@ loadSpotlights();
 document.querySelector("#year").textContent = new Date().getFullYear();
 document.querySelector("#lastModified").textContent =
     `Last Modified: ${document.lastModified} | Portal: https://wyckifbyakagaba.github.io/wdd231/chamber/directory.html`;
+
+    const menuBtn = document.querySelector("#menuBtn");
+const navMenu = document.querySelector("#navMenu");
+
+menuBtn.addEventListener("click", () => {
+    navMenu.classList.toggle("open");
+});

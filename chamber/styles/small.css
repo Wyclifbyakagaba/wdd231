@@ -35,6 +35,24 @@ nav a {
     font-weight: bold;
 }
 
+#menuBtn {
+    display: block;
+    background: #004d40;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+#navMenu {
+    display: none;
+}
+
+#navMenu.open {
+    display: block;
+}
 /*basic grid for members section, starts as single column for small screens*/
 #members.grid {
     display: grid;
