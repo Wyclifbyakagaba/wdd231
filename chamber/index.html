@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kampala Chamber of Commerce | Home page</title>
-    <meta name="description" content="Welcome to the Kampala Chamber of Commerce home page. Connecting businesses, driving growth.">
+    <meta name="description"
+        content="Welcome to the Kampala Chamber of Commerce home page. Connecting businesses, driving growth.">
     <meta name="author" content="Byakagaba Wycliff">
     <link rel="icon" href="images/favicon.png" type="image/x-icon">
 
     <meta property="og:title" content="Kampala Chamber of Commerce | Home">
-    <meta property="og:description" content="Empowering local enterprises, services, and industrial networks in Kampala.">
+    <meta property="og:description"
+        content="Empowering local enterprises, services, and industrial networks in Kampala.">
     <meta property="og:image" content="https://wyclifbyakagaba.github.io/wdd231/chamber/images/chamber.jpg">
     <meta property="og:url" content="https://wyclifbyakagaba.github.io/wdd231/chamber/index.html">
     <meta property="og:type" content="website">
@@ -22,15 +25,18 @@
     <link rel="stylesheet" href="styles/large.css" media="screen and (min-width: 768px)">
 
     <script src="scripts/home.js" defer></script>
-  </head>
- <body>
+    <a href="join.html" class="cta-btn">Join the Chamber</a>
+</head>
+
+<body>
     <header>
         <img src="images/chamber.jpg" alt="Kampala Chamber Logo" class="logo">
-        
-        <nav id="navMenu">
+
+        <button id="menuBtn" aria-label="Open Navigation Menu">☰</button>
+        <nav id="navMenu" aria-label="Main Navigation">
             <ul>
                 <li><a href="index.html" class="active">Home</a></li>
-              <li><a href="directory.html">Directory</a></li>
+                <li><a href="directory.html">Directory</a></li>
                 <li><a href="#">Discover</a></li>
                 <li><a href="#">Join</a></li>
                 <li><a href="#">Contact</a></li>
@@ -40,27 +46,25 @@
 
     <main class="home-main">
         <section class="hero-block">
-            <img src="images/chamber.jpg" alt="Kampala Tech solutions">
+            <img src="images/chamber.jpg" alt="Kampala Chamber of Commerce hero image">
 
             <div class="cta-overlay">
                 <h1>Empowering Kampala's Business Community</h1>
                 <p>Connecting enterprises, driving growth, and fostering innovation across the city.</p>
-                <a href="#" class="cta-btn">Join the Chamber</a>
-              <button id="menuBtn" aria-label="Toggle Menu">☰</button>
-               <button id="gridBtn">Grid View</button>
-               <button id="listBtn">List View</button>
+                <a href="join.html" class="cta-btn">Join the Chamber</a>
             </div>
 
-         <div id="members" class="grid"></div>
+
             <div class="cta-overlay">
-                <h1>Grow Your Enterprise Today</h1>
+                <h2>Grow Your Enterprise Today</h2>
                 <p>Join the premier network of business leaders in Kampala.</p>
-                <a href="#" class="cta-btn">Join the Chamber</a>
+                <a href="join.html" class="cta-btn">Join the Chamber</a>
             </div>
         </section>
 
         <section class="events-panel">
             <h2>Upcoming Chamber Events</h2>
+
             <div class="event-card">
                 <h3>Kampala Business Summit 2026</h3>
                 <p><strong>Date:</strong> June 15, 2026</p>
@@ -75,7 +79,7 @@
 
         <section class="weather-panel">
             <h2>Chamber Weather Hub</h2>
-            <div id="current-weather">
+            <div id="current-weather"></div>
                 <p>Loading weather analytics...</p>
             </div>
             <hr>
@@ -96,4 +100,5 @@
         <p id="lastModified"></p>
     </footer>
 </body>
+
 </html>
