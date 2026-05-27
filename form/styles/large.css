@@ -1,0 +1,30 @@
+@media screen and (min-width: 768px) {
+
+  #menuBtn {
+    display: none;
+  }
+
+  nav {
+    display: block !important;
+  }
+
+  nav ul {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .hero-text {
+    font-size: 1.2rem;
+  }
+
+  form {
+    max-width: 600px;
+    margin: auto;
+  }
+
+  .grid-layout {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}

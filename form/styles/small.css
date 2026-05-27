@@ -1,0 +1,176 @@
+/* =========================
+   GLOBAL RESET
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  background: #ffffff;
+  color: #222;
+  line-height: 1.5;
+}
+
+/* =========================
+   HEADER + NAV
+========================= */
+header {
+  background: #004d40;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 1.3rem;
+}
+
+#menuBtn {
+  display: block;
+  background: none;
+  color: white;
+  font-size: 2rem;
+  border: none;
+  margin: 0.5rem auto;
+  cursor: pointer;
+}
+
+nav {
+  display: none;
+}
+
+nav.open {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+.hero {
+  position: relative;
+  text-align: center;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+}
+
+.hero-text {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  background: rgba(0,0,0,0.6);
+  color: white;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.cta-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  background: #ffcc00;
+  padding: 0.5rem 1rem;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+/* =========================
+   SECTIONS
+========================= */
+section {
+  padding: 1rem;
+}
+
+.events-panel,
+.weather-panel,
+.spotlight-panel {
+  margin-top: 1rem;
+}
+
+/* =========================
+   FORMS (IMPORTANT FOR RUBRIC)
+========================= */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+input,
+select,
+textarea {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+button,
+input[type="submit"] {
+  background: #004d40;
+  color: white;
+  padding: 0.7rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* =========================
+   MEMBERSHIP CARDS (JOIN PAGE)
+========================= */
+.card {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 10px;
+  background: #f9f9f9;
+}
+
+/* =========================
+   THANK YOU PAGE
+========================= */
+.thankyou-card {
+  padding: 2rem;
+  text-align: center;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+  background: #004d40;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}

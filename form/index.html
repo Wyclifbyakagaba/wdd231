@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Join Kampala Chamber</title>
+
+  <link rel="stylesheet" href="styles/small.css" />
+  <script src="scripts/join.js" defer></script>
+</head>
+
+<body>
+
+<header>
+  <h1>Join Kampala Chamber</h1>
+
+  <button id="menuBtn" aria-label="Open Menu">☰</button>
+
+  <nav id="navMenu">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="join.html" class="active">Join</a></li>
+      <li><a href="directory.html">Directory</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+<form method="get" action="thankyou.html">
+
+  <label>
+    First Name
+    <input type="text" name="firstname" required autocomplete="given-name" />
+  </label>
+
+  <label>
+    Last Name
+    <input type="text" name="lastname" required autocomplete="family-name" />
+  </label>
+
+  <label>
+    Organization Title
+    <input type="text" name="title" required minlength="7"
+      pattern="[A-Za-z\\-\\s]{7,}"
+      title="At least 7 characters, letters, hyphens, spaces"
+      autocomplete="organization-title" />
+  </label>
+
+  <label>
+    Email
+    <input type="email" name="email" required
+      placeholder="example@email.com"
+      autocomplete="email" />
+  </label>
+
+  <label>
+    Phone
+    <input type="tel" name="phone" required autocomplete="tel" />
+  </label>
+
+  <label>
+    Organization Name
+    <input type="text" name="organization" required autocomplete="organization" />
+  </label>
+
+  <label>
+    Membership Level
+    <select name="membership" required>
+      <option value="np">NP Membership</option>
+      <option value="bronze">Bronze</option>
+      <option value="silver">Silver</option>
+      <option value="gold">Gold</option>
+    </select>
+  </label>
+
+  <label>
+    Business Description
+    <textarea name="description"></textarea>
+  </label>
+
+  <!-- Timestamp -->
+  <input type="hidden" id="timestamp" name="timestamp" />
+
+  <button type="submit">Submit Application</button>
+
+</form>
+
+</main>
+
+</body>
+</html>
