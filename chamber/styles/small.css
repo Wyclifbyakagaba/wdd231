@@ -35,12 +35,6 @@ nav a {
     font-weight: bold;
 }
 
-.hero-block img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
 /*basic grid for members section, starts as single column for small screens*/
 #members.grid {
     display: grid;
