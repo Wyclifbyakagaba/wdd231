@@ -7,8 +7,10 @@ body {
     background-color: #ffffff;
     color: #333;
     font-family: 'Roboto', Arial, sans-serif;
+} 
+body {
+    overflow-x: hidden;
 }
-
 
 header,
 footer {
@@ -53,6 +55,30 @@ nav a {
 #navMenu.open {
     display: block;
 }
+.hero-block img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.cta-overlay {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    color: white;
+    max-width: 400px;
+}
+
+.cta-btn {
+    display: inline-block;
+    background-color: #ffd700;
+    color: #004d40;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
 /*basic grid for members section, starts as single column for small screens*/
 #members.grid {
     display: grid;
