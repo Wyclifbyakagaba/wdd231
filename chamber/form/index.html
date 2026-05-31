@@ -54,15 +54,26 @@
   <label>
     Last Name
     <input type="text" name="lastname" required autocomplete="family-name" />
-  </label>
+ </label>
+   
+ <label> 
+    Given Name
+    <input type="text" name="givenname" required autocomplete="given-name" />
+ </label>
 
   <label>
-    Organization Title
+    Business Title
     <input type="text" name="title" required minlength="7"
       pattern="[A-Za-z\\-\\s]{7,}"
       title="At least 7 characters, letters, hyphens, spaces"
       autocomplete="organization-title" />
   </label>
+
+    <label>
+      business discription
+      <input type="text" name="discription" required minlength="10"/>
+    </label>
+  
 
   <label>
     Email
