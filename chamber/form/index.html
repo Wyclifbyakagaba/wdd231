@@ -19,7 +19,7 @@
     <meta property="og:url" content="https://wyclifbyakagaba.github.io/wdd231/chamber/form/index.html">
     <meta property="og:type" content="website">
 
-  <link rel="stylesheet" href="styles/small.css" />
+  <link rel="stylesheet" href="styles/small.css">>
   <link rel="stylesheet" href="styles/large.css">
 
   <script src="scripts/join.js" defer></script> 
@@ -83,7 +83,7 @@
 
     <label>
       business Description
-      <input type="text" name="description" title="Enter a description of your business" required  autocomplete="organization-description" minlength="10"/>
+      <input type="text" name="description" title="Enter a description of your business" required  minlength="10"></textarea>>
     </label>
   
 
@@ -106,8 +106,9 @@
 
   <label>
     Membership Level
-    <select name="membership" title="Select your membership level" required>
-      <option value="np">NP Membership</option>
+    <select name="membership"required>
+     <option value="" disabled selected>Select membership level</option>
+     <option value="np">NP Membership</option>
       <option value="bronze">Bronze</option>
       <option value="silver">Silver</option>
       <option value="gold">Gold</option>
