@@ -22,22 +22,34 @@
   <link rel="stylesheet" href="styles/small.css" />
   <link rel="stylesheet" href="styles/large.css">
 
-  <script src="scripts/join.js" defer></script>
+  <script src="scripts/join.js" defer></script> 
+
+  <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 
 <body>
 
 <header>
   <h1>Join Kampala Chamber</h1>
-<link rel="icon" type="image/png" href="images/favicon.png">
-  <button id="menuBtn" aria-label="Open Menu">☰</button>
+
+ <button id="menuBtn" aria-label="Open Menu">☰</button>
 
   <nav id="navMenu">
     <ul>
       <li><a href="index.html">Home</a></li>
+
       <li><a href="join.html" class="active">Join</a></li>
+
       <li><a href="directory.html">Directory</a></li>
+
       <li><a href="contact.html">Contact</a></li>
+
+      <li><a href="discover.html">Discover</a></li>
+
+      <li><a href="form/index.html">Membership Form</a></li>
+      
+      <li><a href="form/thankyou.html">Thank You</a></li>
+     
     </ul>
   </nav>
 </header>
@@ -70,8 +82,8 @@
   </label>
 
     <label>
-      business discription
-      <input type="text" name="discription" required minlength="10"/>
+      business Description
+      <input type="text" name="description" required minlength="10"/>
     </label>
   
 
@@ -104,7 +116,7 @@
 
   <label>
     Business Description
-    <textarea name="description"></textarea>
+    <textarea name="description" required minlength="10"></textarea>
   </label>
 
   <!-- Timestamp -->
