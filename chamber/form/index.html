@@ -60,17 +60,17 @@
 
   <label>
     First Name
-    <input type="text" name="firstname" title="Enter your first name" required/>
+    <input type="text" name="firstname" title="Enter your first name" required  autocomplete="given-name"/>
   </label>
 
   <label>
     Last Name
-    <input type="text" name="lastname" title="Enter your last name" required />
+    <input type="text" name="lastname" title="Enter your last name" required  autocomplete="family-name"/>
  </label>
    
  <label> 
     Given Name
-    <input type="text" name="givenname" title="Enter your given name" required />
+    <input type="text" name="givenname" title="Enter your given name" required  autocomplete="given-name"/>
  </label>
 
   <label>
@@ -83,7 +83,7 @@
 
     <label>
       business Description
-      <input type="text" name="description" title="Enter a description of your business" required minlength="10"/>
+      <input type="text" name="description" title="Enter a description of your business" required  autocomplete="organization-description" minlength="10"/>
     </label>
   
 
@@ -116,7 +116,7 @@
 
   <label>
     Business Description
-    <textarea name="description" title="Enter a description of your business" required minlength="10"></textarea>
+    <textarea name="description" title="Enter a description of your business" required minlength="10" autocomplete="organization-description"></textarea>
   </label>
 
   <!-- Timestamp -->
