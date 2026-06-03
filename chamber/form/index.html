@@ -86,18 +86,31 @@
 
       </div>
       <!-- MODALS -->
-  <dialog id="npModal">...</dialog>
+  <dialog id="npModal">
     <h3>NP Membership Benefits</h3>
   <p>Free listing, no voting rights, access to newsletters.</p>
-  <button type="button" onclick="document.getElementById('npModal').close()">Close</button>
+  <button onclick='npModal.close()'>Close</button>
 </dialog>
-  <dialog id="bronzeModal">...</dialog>
-  <dialog id="silverModal">...</dialog>
-  <dialog id="goldModal">...</dialog>
 
-  <!-- FORM -->
-  <form method="get" action="thankyou.html">
+  <dialog id="bronzeModal">
+  <h3>Bronze Membership Benefits</h3>
+  <p>Business listing, limited events access, networking opportunities.</p>
+  <button type="button" onclick="bronzeModal.close()">Close</button>
+</dialog>
 
+  <dialog id="silverModal">
+  <h3>Silver Membership Benefits</h3>
+  <p>Enhanced listing, priority events access, exclusive networking.</p>
+  <button type="button" onclick="silverModal.close()">Close</button>
+</dialog>
+
+  <dialog id="goldModal">
+  <h3>Gold Membership Benefits</h3>
+  <p>Premium listing, full events access, dedicated support.</p>
+  <button type="button" onclick="goldModal.close()">Close</button>
+</dialog>
+
+  
       <!-- FORM -->
       <form method="get" action="thankyou.html">
 
