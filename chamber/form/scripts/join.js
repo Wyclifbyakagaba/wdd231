@@ -8,25 +8,25 @@ menuBtn.addEventListener("click", () => {
 });
 
 // =========================
-// MODALS (ADD THIS PART)
+// MODALS 
 // =========================
 
-// NP
+
 document.getElementById("npBtn").addEventListener("click", () => {
   document.getElementById("npModal").showModal();
 });
 
-// Bronze
+
 document.getElementById("bronzeBtn").addEventListener("click", () => {
   document.getElementById("bronzeModal").showModal();
 });
 
-// Silver
+
 document.getElementById("silverBtn").addEventListener("click", () => {
   document.getElementById("silverModal").showModal();
 });
 
-// Gold
+
 document.getElementById("goldBtn").addEventListener("click", () => {
   document.getElementById("goldModal").showModal();
 });
