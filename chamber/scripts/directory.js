@@ -17,7 +17,7 @@ function displayMembers(members) {
         // 1. ADD A CLASS TO THE CARD BASED ON THE MEMBERSHIP LEVEL
         card.classList.add("directory-card");
 
-       // 2 .CONVERT NUMERICAL MEMBERSHIP TO STRING VALUES
+        // 2 .CONVERT NUMERICAL MEMBERSHIP TO STRING VALUES
         let tierName = "General Member";
         let tierClass = "Member";
 
@@ -58,7 +58,7 @@ document.querySelector("#listBtn").addEventListener("click", () => {
     membersContainer.classList.add("list");
     membersContainer.classList.remove("grid");
 });
- // KEEP THESE: Perfect standard footer requirements
+// KEEP THESE: Perfect standard footer requirements
 document.querySelector("#year").textContent = new Date().getFullYear();
 document.querySelector("#lastModified").textContent =
     `Last Modified: ${document.lastModified}`;
