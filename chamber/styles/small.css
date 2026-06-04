@@ -1,71 +1,176 @@
-/* ==========================================
-   1. GLOBAL STYLES (Used by BOTH pages)
+/* ========================================== 
+   CHAMBER COMMERCE WEBSITE - MOBILE STYLES
    ========================================== */
 
-body {
+/* =========================
+   GLOBAL RESET & BASE STYLES
+   ========================= */
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
     background-color: #ffffff;
     color: #333;
-    font-family: 'Roboto', Arial, sans-serif;
-} 
-body {
+    line-height: 1.6;
     overflow-x: hidden;
 }
 
-header,
-footer {
+html {
+    scroll-behavior: smooth;
+}
+
+main {
+    padding: 1rem 0;
+}
+
+/* =========================
+   HEADER STYLES
+   ========================= */
+header {
     background: #004d40;
     color: white;
     padding: 1rem;
     text-align: center;
+    position: relative;
 }
 
-nav ul {
-    display: flex;
-    list-style: none;
-    padding: 0;
+header h1 {
+    font-size: 1.5rem;
     margin: 0;
-    flex-direction: column;
-    gap: 1rem;
-    text-align: center;
-
+    padding: 0.5rem 0;
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+/* Logo styling */
+header img {
+    max-width: 60px;
+    height: auto;
+    margin-bottom: 0.5rem;
 }
 
+/* =========================
+   NAVIGATION STYLES
+   ========================= */
+/* Mobile hamburger button */
 #menuBtn {
     display: block;
-    background: #004d40;
+    background: transparent;
     color: white;
     border: none;
-    padding: 0.5rem 1rem;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     cursor: pointer;
-    margin: 0 auto;
+    padding: 0.5rem 1rem;
+    float: right;
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
 }
 
+#menuBtn:hover {
+    opacity: 0.8;
+}
+
+/* Navigation menu */
 #navMenu {
     display: none;
+    width: 100%;
+    background: #003a30;
+    padding: 0;
+    margin: 0;
+    clear: both;
 }
 
 #navMenu.open {
     display: block;
 }
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    border-bottom: 1px solid #004d40;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #004d40;
+}
+
+nav a.active {
+    background-color: #ffd700;
+    color: #004d40;
+    font-weight: bold;
+}
+
+/* =========================
+   FOOTER STYLES
+   ========================= */
+footer {
+    background: #004d40;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+/* =========================
+   HERO SECTION
+   ========================= */
+.hero-block {
+    position: relative;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
 .hero-block img {
     width: 100%;
     height: auto;
     display: block;
 }
+
 .cta-overlay {
     position: absolute;
     top: 20%;
-    left: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.7);
     color: white;
-    max-width: 400px;
+    padding: 1.5rem;
+    border-radius: 8px;
+    max-width: 90%;
+    text-align: center;
+}
+
+.cta-overlay h1,
+.cta-overlay h2 {
+    margin: 0.5rem 0;
+    font-size: 1.3rem;
+}
+
+.cta-overlay p {
+    font-size: 0.95rem;
+    margin: 0.5rem 0;
 }
 
 .cta-btn {
@@ -77,44 +182,205 @@ nav a {
     font-weight: bold;
     border-radius: 5px;
     margin-top: 1rem;
+    transition: background-color 0.3s ease;
 }
 
-/*basic grid for members section, starts as single column for small screens*/
+.cta-btn:hover {
+    background-color: #ffed4e;
+}
+
+/* =========================
+   MAIN SECTIONS
+   ========================= */
+section {
+    padding: 1.5rem 1rem;
+    margin: 1rem 0;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #004d40;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.2rem;
+    color: #004d40;
+    margin: 0.5rem 0;
+}
+
+.events-panel,
+.weather-panel,
+.spotlight-panel {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.event-card,
+.spotlight-card {
+    background: white;
+    border: 1px solid #e0e0e0;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.event-card p,
+.spotlight-card p {
+    margin: 0.5rem 0;
+}
+
+/* =========================
+   FORMS
+   ========================= */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.5rem;
+    max-width: 100%;
+    margin: 0 auto;
+    background: #f9f9f9;
+    border-radius: 8px;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    color: #004d40;
+    gap: 0.5rem;
+}
+
+input,
+select,
+textarea {
+    padding: 0.75rem;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #004d40;
+    box-shadow: 0 0 5px rgba(0, 77, 64, 0.3);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* =========================
+   BUTTONS
+   ========================= */
+button,
+input[type="submit"] {
+    background: #004d40;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+button:hover,
+input[type="submit"]:hover {
+    background-color: #003a30;
+}
+
+button:active,
+input[type="submit"]:active {
+    transform: scale(0.98);
+}
+
+/* =========================
+   MEMBERS GRID
+   ========================= */
 #members.grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1rem;
-    padding: 1rem;
-    background-color: #f4ede4;
-}
-
-/*card Elements for grid layout*/
-#members.grid section {
-    display: block;
-    margin: 1rem;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
+    gap: 1.5rem;
     padding: 1.5rem;
-    text-align: center;
-
+    background-color: #f4ede4;
+    border-radius: 8px;
 }
 
-/* ==========================================
-   2. NEW: DIRECTORY CARD COMPONENTS & BADGES
-   ========================================== */
+#members.grid section {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
 
-/* Gives the badge text some padding and curves the corners */
+#members.grid section:hover {
+    transform: translateY(-5px);
+}
+
+#members.grid h3 {
+    font-size: 1.3rem;
+    margin: 1rem 0 0.5rem;
+}
+
+#members.grid p {
+    margin: 0.5rem 0;
+    color: #666;
+}
+
+/* =========================
+   MEMBERSHIP CARDS
+   ========================= */
+.card {
+    border: 1px solid #ddd;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* =========================
+   BADGES
+   ========================= */
 .badge {
     display: inline-block;
-    padding: 0.4rem 0.8rem;
+    padding: 0.5rem 0.8rem;
     margin-top: 0.75rem;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     text-transform: uppercase;
-    border-radius: 4px;
+    border-radius: 20px;
+    font-weight: bold;
 }
 
-/* ADDED PERFECTLY HERE AT THE BOTTOM */
 .badge.general {
     background-color: #757575;
     color: white;
@@ -122,17 +388,84 @@ nav a {
 
 .badge.silver {
     background-color: #b0bec5;
-    color: black;
+    color: #333;
 }
 
 .badge.gold {
     background-color: #ffd700;
-    color: black;
-    font-weight: bold;
+    color: #333;
 }
 
 .badge.platinum {
     background-color: #e5e4e2;
-    color: black;
-    font-weight: bold;
+    color: #333;
+}
+
+/* =========================
+   THANK YOU PAGE
+   ========================= */
+.thankyou-card {
+    padding: 2rem;
+    text-align: center;
+    background: #e8f5e9;
+    border-left: 5px solid #004d40;
+    border-radius: 8px;
+    margin: 2rem 0;
+}
+
+.thankyou-card h2 {
+    color: #004d40;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* =========================
+   VIEW BUTTONS (DIRECTORY)
+   ========================= */
+.view-buttons {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    margin: 1.5rem 0;
+    flex-wrap: wrap;
+}
+
+.view-buttons button {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.95rem;
+}
+
+/* =========================
+   UTILITY CLASSES
+   ========================= */
+.hidden {
+    display: none;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mt-1 {
+    margin-top: 0.5rem;
+}
+
+.mt-2 {
+    margin-top: 1rem;
+}
+
+.mt-3 {
+    margin-top: 1.5rem;
+}
+
+.mb-1 {
+    margin-bottom: 0.5rem;
+}
+
+.mb-2 {
+    margin-bottom: 1rem;
+}
+
+.mb-3 {
+    margin-bottom: 1.5rem;
 }

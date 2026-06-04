@@ -26,7 +26,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
-    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/large.css" media="screen and (min-width: 768px)">
 
     <script src="scripts/directory.js" defer></script>
 </head>
@@ -37,25 +37,26 @@
         <!-- Logo image -->
         <img src="images/chamber.jpg" alt="Kampala Chamber Logo" class="logo">
         <nav id="navMenu">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="join.html">Join</a></li>
-                <li><a href="directory.html" class="active">Directory</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="discover.html">Discover</a></li>
-                <li><a href="form/index.html">Membership Form</a></li>
-                <li><a href="form/thankyou.html">Thank You</a></li>
-            </ul>
-        </nav>
+            <h1>Kampala Chamber Directory</h1>
+            <button id="menuBtn" aria-label="Open Navigation Menu">☰</button>
+            <nav id="navMenu" aria-label="Main Navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="directory.html" class="active">Directory</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="form/index.html">Membership Form</a></li>
+                    <li><a href="form/thankyou.html">Thank You</a></li>
+                </ul>
+            </nav>
 
     </header>
 
     <main>
-        <h1>Kampala Chamber Directory</h1>
 
         <h2>Business Directory</h2>
         <div class="view-buttons">
-            <button id="menuBtn">☰</button>
             <button id="gridBtn">Grid View</button>
             <button id="listBtn">List View</button>
         </div>
