@@ -1,7 +1,7 @@
 const membersContainer = document.querySelector("#members");
 
 async function getMembers() {
-    const response = await fetch("data/members.json");
+    const response = await fetch("../data/members.json");
     const data = await response.json();
 
     displayMembers(data);
@@ -36,7 +36,7 @@ function displayMembers(members) {
         }
         // 3. GENERATE THE TARGET CARD ELEMENTS WITH DESIGN CLASSES
         card.innerHTML = `
-            <img src="images/${member.image}" alt="${member.name}" loading="lazy">
+            <img src="../images/${member.image}" alt="${member.name}" loading="lazy">
             <h3>${member.name}</h3>
             <a href="${member.website}" target="_blank" class="website-btn">Visit Website</a>
             <p class="address-text">${member.address}</p>

@@ -339,6 +339,41 @@ input[type="submit"]:active {
     color: #666;
 }
 
+#members.grid section img,
+#members.list section img {
+    width: 100%;
+    max-height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+#members.list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    background-color: #f4ede4;
+    border-radius: 8px;
+}
+
+#members.list section {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 1rem;
+    align-items: center;
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+#members.list h3 {
+    margin-top: 0;
+}
+
 /* =========================
    MEMBERSHIP CARDS
    ========================= */
