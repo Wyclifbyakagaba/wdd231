@@ -1,33 +1,43 @@
-document.getElementById("timestamp").value = new Date().toISOString();
+var tsEl = document.getElementById("timestamp");
+if (tsEl) tsEl.value = new Date().toISOString();
 
 const menuBtn = document.querySelector("#menuBtn");
 const navMenu = document.querySelector("#navMenu");
-
-menuBtn.addEventListener("click", () => {
-  navMenu.classList.toggle("open");
-});
+if (menuBtn && navMenu) {
+  menuBtn.addEventListener("click", () => {
+    navMenu.classList.toggle("open");
+  });
+}
 
 // =========================
 // MODALS 
 // =========================
 
 
-document.getElementById("npBtn").addEventListener("click", () => {
-  document.getElementById("npModal").showModal();
-});
+var npBtn = document.getElementById("npBtn");
+var npModal = document.getElementById("npModal");
+if (npBtn && npModal) {
+  npBtn.addEventListener("click", () => npModal.showModal());
+}
 
 
-document.getElementById("bronzeBtn").addEventListener("click", () => {
-  document.getElementById("bronzeModal").showModal();
-});
+var bronzeBtn = document.getElementById("bronzeBtn");
+var bronzeModal = document.getElementById("bronzeModal");
+if (bronzeBtn && bronzeModal) {
+  bronzeBtn.addEventListener("click", () => bronzeModal.showModal());
+}
 
 
-document.getElementById("silverBtn").addEventListener("click", () => {
-  document.getElementById("silverModal").showModal();
-});
+var silverBtn = document.getElementById("silverBtn");
+var silverModal = document.getElementById("silverModal");
+if (silverBtn && silverModal) {
+  silverBtn.addEventListener("click", () => silverModal.showModal());
+}
 
 
-document.getElementById("goldBtn").addEventListener("click", () => {
-  document.getElementById("goldModal").showModal();
-});
+var goldBtn = document.getElementById("goldBtn");
+var goldModal = document.getElementById("goldModal");
+if (goldBtn && goldModal) {
+  goldBtn.addEventListener("click", () => goldModal.showModal());
+}
 

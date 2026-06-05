@@ -9,74 +9,118 @@
         content="Join the Kampala Chamber of Commerce and connect with businesses, networking opportunities, and membership benefits across Uganda.">
     <meta name="theme-color" content="#ffffff">
     <title>Join Chamber</title>
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css" media="screen and (min-width: 768px)">
+
+    <meta property="og:title" content="Kampala Chamber of Commerce | Join">
+    <meta property="og:description"
+        content="Join the Kampala Chamber of Commerce to access networking, training, and member benefits.">
 </head>
 
 <body>
 
     <header>
-        <h1>Join Kampala Chamber</h1>
-        <nav id="navMenu">
+        <img src="images/chamber.jpg" alt="Kampala Chamber Logo" class="logo">
+        <button id="menuBtn" aria-label="Open Navigation Menu">☰</button>
+        <nav id="navMenu" aria-label="Main Navigation">
             <ul>
                 <li><a href="index.html">Home</a></li>
+                <li><a href="join.html" class="active">Join</a></li>
                 <li><a href="directory.html">Directory</a></li>
-                <li><a href="discover.html">Discover</a></li>
-                <li><a href="form/join.html" class="active">Join</a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <li><a href="discover.html">Discover</a></li>
                 <li><a href="form/index.html">Membership Form</a></li>
                 <li><a href="form/thankyou.html">Thank You</a></li>
             </ul>
         </nav>
+        <h1>Join Kampala Chamber</h1>
     </header>
 
     <main>
 
         <form method="get" action="thankyou.html">
 
-            <label for="firstName">First Name</label>
-            <input type="text" id="firstName" name="firstName" required>
-            
+            <h2 class="text-center">Membership Application</h2>
 
-            <label for="lastName">Last Name</label>
-            <input type="text" id="lastName" name="lastName" required>
-            
+            <label for="firstName">First Name
+                <input type="text" id="firstName" name="firstName" required>
+            </label>
 
-            <label for="orgTitle">Organization Title</label>
-            <input type="text" id="orgTitle" name="orgTitle" pattern="^[a-zA-Z0-9\s]+$"
-                title="Organization title should only contain letters, numbers, and spaces.">
-        
+            <label for="lastName">Last Name
+                <input type="text" id="lastName" name="lastName" required>
+            </label>
 
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
+            <label for="org">Organization Description:</label>
+            <textarea id="org" name="organization_Description"></textarea> 
+            <label for="org">Organization Description:
+                <textarea id="org" name="organization_Description" required></textarea>
+            </textarea>
+            </label>
 
-            
+            <label for="email">Email
+                <input type="email" id="email" name="email" required>
+            </label>
 
-            <label for="phone">Mobile Phone</label>
-            <input type="tel" id="phone" name="phone" required>
-            
+            <label for="phone">Mobile Phone
+                <input type="tel" id="phone" name="phone" inputmode="tel" placeholder="+256 7XXXXXXXX" pattern="\+?\d{7,15}" required>
+            </label>
 
-            <label for="organizationName">Organization Name</label>
-            <input type="text" id="organizationName" name="organizationName" required>
-            
+            <label for="organizationName">Organization Name
+                <input type="text" id="organizationName" name="organizationName" required>
+            </label>
 
-            <label for="membershipLevel">Membership Level</label>
-            <select id="membershipLevel" name="membershipLevel" required>
-                <option value="NP">NP Membership</option>
-                <option value="bronze">Bronze Membership</option>
-                <option value="silver">Silver Membership</option>
-                <option value="gold">Gold Membership</option>
-            </select>
-            
+            <label for="membershipLevel">Membership Level
+                <select id="membershipLevel" name="membershipLevel" required>
+                    <option value="NP">NP Membership</option>
+                    <option value="bronze">Bronze Membership</option>
+                    <option value="silver">Silver Membership</option>
+                    <option value="gold">Gold Membership</option>
+                </select>
+            </label>
 
-            <label for="organizationDescription">Organization Description</label>
-            <textarea id="organizationDescription" name="organizationDescription" required></textarea>
+            <label for="organizationDescription">Organization Description
+                <textarea id="organizationDescription" name="organizationDescription" required></textarea>
+            </label>
+
             <input type="hidden" id="timestamp" name="timestamp">
 
-            <button type="submit">Submit Application</button>
+            <div class="text-center">
+                <button type="submit">Submit Application</button>
+            </div>
 
         </form>
+
         <!-- 2. MEMBERSHIP CARDS -->
         <section class="membership-cards">
-            <!-- membership cards markup goes here -->
+            <h2 class="text-center">Membership Options</h2>
+            <div class="card-grid">
+                <article class="card">
+                    <h3>NP Membership</h3>
+                    <p>Free membership for nonprofit organisations.</p>
+                    <button id="npBtn">Learn more</button>
+                </article>
+                <article class="card">
+                    <h3>Bronze</h3>
+                    <p>Directory listing and networking.</p>
+                    <button id="bronzeBtn">Learn more</button>
+                </article>
+                <article class="card">
+                    <h3>Silver</h3>
+                    <p>Training and discounts included.</p>
+                    <button id="silverBtn">Learn more</button>
+                </article>
+                <article class="card">
+                    <h3>Gold</h3>
+                    <p>Premium advertising and homepage spotlight.</p>
+                    <button id="goldBtn">Learn more</button>
+                </article>
+            </div>
         </section>
 
         <!-- 3. MODALS (PUT HERE OUTSIDE FORM) -->
@@ -111,6 +155,8 @@
         <p>&copy; <span id="year"></span> Kampala Chamber | Byakagaba Wycliff 🌍🌍 | WDD 231</p>
         <p id="lastModified"></p>
     </footer>
+
+    <script src="form/scripts/join.js" defer></script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             var ts = document.getElementById('timestamp');

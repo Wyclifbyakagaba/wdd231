@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Kampala</title>
+    <meta name="author" content="Byakagaba Wycliff">
+    <meta name="description" content="Discover Kampala: attractions, investment highlights, and business districts.">
+
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css" media="screen and (min-width: 768px)">
+</head>
+
+<body>
+
+    <header>
+        <img src="images/chamber.jpg" alt="Kampala Chamber Logo" class="logo">
+        <button id="menuBtn" aria-label="Open Navigation Menu">☰</button>
+        <nav id="navMenu" aria-label="Main Navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="discover.html" class="active">Discover</a></li>
+                <li><a href="form/index.html">Membership Form</a></li>
+                <li><a href="form/thankyou.html">Thank You</a></li>
+            </ul>
+        </nav>
+        <h1>Discover Kampala</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>City Highlights</h2>
+            <ul>
+                <li>Kasubi Tombs</li>
+                <li>Lake Victoria</li>
+                <li>Wandegeya Market</li>
+                <li>Entebbe Road Business District</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Why Invest Here?</h2>
+            <p>Kampala is a fast-growing business hub with expanding opportunities in trade, tech, and tourism.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Kampala Chamber | Byakagaba Wycliff 🌍🌍 | WDD 231</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var yearEl = document.getElementById('year');
+            if (yearEl) yearEl.textContent = new Date().getFullYear();
+            var lm = document.getElementById('lastModified');
+            if (lm) lm.textContent = 'Last modified: ' + document.lastModified;
+        });
+    </script>
+
+</body>
+
+</html>
