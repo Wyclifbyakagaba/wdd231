@@ -30,49 +30,81 @@
 
     <main>
 
-        <form method="get"  action="form/thankyou.html">
+        <form method="get" action="form/thankyou.html">
 
             <label for="firstName">First Name</label>
-                <input type="text" id="firstName" name="firstName" required>
+            <input type="text" id="firstName" name="firstName" required>
             </label>
 
             <label for="lastName">Last Name</label>
-                <input type="text" id="lastName" name="lastName" required>
+            <input type="text" id="lastName" name="lastName" required>
             </label>
 
             <label for="orgTitle">Organization Title</label>
-                <input type="text" id="orgTitle" name="orgTitle" pattern="^[a-zA-Z0-9\s]+$" title="Organization title should only contain letters, numbers, and spaces.">
+            <input type="text" id="orgTitle" name="orgTitle" pattern="^[a-zA-Z0-9\s]+$"
+                title="Organization title should only contain letters, numbers, and spaces.">
             </label>
 
             <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-        
+            <input type="email" id="email" name="email" required>
+
             </label>
 
             <label for="phone">Mobile Phone</label>
-                <input type="tel" id="phone" name="phone" required>
+            <input type="tel" id="phone" name="phone" required>
             </label>
 
             <label for="businessName">Business Name</label>
-                <input type="text" id="businessName" name="businessName" required>
+            <input type="text" id="businessName" name="businessName" required>
             </label>
 
             <label for="membershipLevel">Membership Level</label>
-                <select id="membershipLevel" name="membershipLevel" required>
-                    <option value="NP">NP Membership</option>
-                    <option value="bronze">Bronze Membership</option>
-                    <option value="silver">Silver Membership</option>
-                    <option value="gold">Gold Membership</option>
-                </select>
+            <select id="membershipLevel" name="membershipLevel" required>
+                <option value="NP">NP Membership</option>
+                <option value="bronze">Bronze Membership</option>
+                <option value="silver">Silver Membership</option>
+                <option value="gold">Gold Membership</option>
+            </select>
             </label>
 
-             <label for="businessDescription">Business Description</label>
-                <textarea id="businessDescription" name="businessDescription" required></textarea>
-               <input type="hidden" id="timestamp" name="timestamp">
+            <label for="businessDescription">Business Description</label>
+            <textarea id="businessDescription" name="businessDescription" required></textarea>
+            <input type="hidden" id="timestamp" name="timestamp">
 
-               <button type="submit">Submit Application</button>
+            <button type="submit">Submit Application</button>
 
         </form>
+
+        <!-- 2. MEMBERSHIP CARDS -->
+        <section class="membership-cards">
+            ...
+        </section>
+
+        <!-- 3. MODALS (PUT HERE OUTSIDE FORM) -->
+
+        <dialog id="npModal">
+            <h2>NP Membership Benefits</h2>
+            <p>Free membership for nonprofit organizations.</p>
+            <button onclick="document.getElementById('npModal').close()">Close</button>
+        </dialog>
+
+        <dialog id="bronzeModal">
+            <h2>Bronze Membership Benefits</h2>
+            <p>Directory listing and networking opportunities.</p>
+            <button onclick="document.getElementById('bronzeModal').close()">Close</button>
+        </dialog>
+
+        <dialog id="silverModal">
+            <h2>Silver Membership Benefits</h2>
+            <p>Training and discounts included.</p>
+            <button onclick="document.getElementById('silverModal').close()">Close</button>
+        </dialog>
+
+        <dialog id="goldModal">
+            <h2>Gold Membership Benefits</h2>
+            <p>Premium advertising and homepage spotlight.</p>
+            <button onclick="document.getElementById('goldModal').close()">Close</button>
+        </dialog>
 
     </main>
 

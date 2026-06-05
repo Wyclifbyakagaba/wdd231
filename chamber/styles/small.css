@@ -384,7 +384,45 @@ input[type="submit"]:active {
     border-radius: 10px;
     background: white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    animation: fadeIn 0.8s ease-in-out;
+}  
+    /* =========================
+   MEMBERSHIP CARDS ANIMATION FIX (ADD BELOW .card)
+   ========================= */
+
+.membership-cards .card {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease forwards;
+}
+
+/* staggered animation timing */
+.membership-cards .card:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.membership-cards .card:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.membership-cards .card:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.membership-cards .card:nth-child(4) {
+    animation-delay: 0.8s;
+}
+
+/* animation keyframes */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .card h3 {
