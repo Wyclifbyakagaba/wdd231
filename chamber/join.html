@@ -34,29 +34,29 @@
 
             <label for="firstName">First Name</label>
             <input type="text" id="firstName" name="firstName" required>
-            </label>
+            
 
             <label for="lastName">Last Name</label>
             <input type="text" id="lastName" name="lastName" required>
-            </label>
+            
 
             <label for="orgTitle">Organization Title</label>
             <input type="text" id="orgTitle" name="orgTitle" pattern="^[a-zA-Z0-9\s]+$"
                 title="Organization title should only contain letters, numbers, and spaces.">
-            </label>
+        
 
             <label for="email">Email</label>
             <input type="email" id="email" name="email" required>
 
-            </label>
+            
 
             <label for="phone">Mobile Phone</label>
             <input type="tel" id="phone" name="phone" required>
-            </label>
+            
 
             <label for="businessName">Business Name</label>
             <input type="text" id="businessName" name="businessName" required>
-            </label>
+            
 
             <label for="membershipLevel">Membership Level</label>
             <select id="membershipLevel" name="membershipLevel" required>
@@ -74,7 +74,9 @@
             <button type="submit">Submit Application</button>
 
         </form>
-
+   <script>
+    document.getElementById("timestamp").value = new Date().toISOString();
+    </script>
         <!-- 2. MEMBERSHIP CARDS -->
         <section class="membership-cards">
             ...
