@@ -4,7 +4,7 @@
         "address":  "Kampala Road",
         "phone":    "+256700111222",
         "website":  "https://kampalatech.com",
-        "image":   "kampala-tech.jpg",
+        "image":   "kampala-tech-solutions.jpg",
         "membership":  1
     },
     {
@@ -12,7 +12,7 @@
         "address":  "Jinja Road",
         "phone":   "+256701222333",
         "website": "https://ugandasafari.com",
-        "image":  "uganda-safari.jpg",
+        "image":  "uganda-safari-tours.jpg",
         "membership":  2
     },
     {
