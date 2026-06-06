@@ -1,7 +1,5 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const yearEl = document.getElementById('year');
-    if (yearEl) yearEl.textContent = new Date().getFullYear();
+const yearEl = document.getElementById('year');
+if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-    const lm = document.getElementById('lastModified');
-    if (lm) lm.textContent = 'Last modified: ' + document.lastModified;
-});
+const lm = document.getElementById('lastModified');
+if (lm) lm.textContent = 'Last modified: ' + document.lastModified;
