@@ -1,3 +1,23 @@
+document.addEventListener("DOMContentLoaded", () => {
+
+  // =========================
+  // CLOSE MODALS (PUT THIS FIRST)
+  // =========================
+  const closeButtons = document.querySelectorAll(".close-modal");
+
+  closeButtons.forEach(btn => {
+    btn.addEventListener("click", () => {
+      const modalId = btn.dataset.modal;
+      const modal = document.getElementById(modalId);
+      if (modal) modal.close();
+    });
+  });
+
+  // =========================
+  // TIMESTAMP
+  // =========================
+
+
 var tsEl = document.getElementById("timestamp");
 if (tsEl) tsEl.value = new Date().toISOString();
 
