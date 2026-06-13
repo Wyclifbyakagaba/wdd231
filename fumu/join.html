@@ -1,88 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Join — Fumu Sports Foundation</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap" as="style" onload="this.rel='stylesheet'">
-  <noscript>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  </noscript>
-  <link rel="stylesheet" href="styles/fumu-sports.css">
-  <meta name="description" content="Join Fumu Sports Foundation as a member or partner.">
-  <link rel="canonical" href="/join.html">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Join — Fumu Sports Foundation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap"
+        as="style" onload="this.rel='stylesheet'">
+    <noscript>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap"
+            rel="stylesheet">
+    </noscript>
+    <link rel="stylesheet" href="styles/fumu-sports.css">
+    <meta name="description" content="Join Fumu Sports Foundation as a member or partner.">
+    <link rel="canonical" href="/join.html">
 </head>
+
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-  <header class="card">
-    <div class="header-inner">
-      <div class="logo-wrap">
-        <div class="logo-circle">FS</div>
-        <div class="brand-text">
-          <h1>Fumu Sports Foundation</h1>
-          <p>Join</p>
+    <header class="card">
+        <div class="header-inner">
+            <div class="logo-wrap">
+                <div class="logo-circle">FS</div>
+                <div class="brand-text">
+                    <h1>Fumu Sports Foundation</h1>
+                    <p>Join</p>
+                </div>
+            </div>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="fumu-sports.html">Home</a></li>
+                    <li><a href="about-us.html">About</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="contacts.html">Contact</a></li>
+                    <li><a href="join.html">Join</a></li>
+                </ul>
+            </nav>
         </div>
-      </div>
-      <nav id="main-nav">
-        <ul>
-          <li><a href="fumu-sports.html">Home</a></li>
-          <li><a href="about-us.html">About</a></li>
-          <li><a href="directory.html">Directory</a></li>
-          <li><a href="contacts.html">Contact</a></li>
-          <li><a href="join.html">Join</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+    </header>
 
-  <main id="main" tabindex="-1" class="card">
-    <h1>Become a Member</h1>
-    <p>Join Fumu Sports Foundation to access training, events, and partnership opportunities.</p>
+    <main id="main" tabindex="-1" class="card">
+        <h1>Become a Member</h1>
+        <p>Join Fumu Sports Foundation to access training, events, and partnership opportunities.</p>
 
-    <form id="join-form">
-      <label for="orgName">Organization / Club Name</label>
-      <input id="orgName" name="orgName" required>
+        <form id="join-form">
+            <label for="orgName">Organization / Club Name</label>
+            <input id="orgName" name="orgName" required>
 
-      <label for="contactName">Contact Person</label>
-      <input id="contactName" name="contactName" required>
+            <label for="contactName">Contact Person</label>
+            <input id="contactName" name="contactName" required>
 
-      <label for="email">Email</label>
-      <input id="email" name="email" type="email" required>
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required>
 
-      <label for="phone">Phone</label>
-      <input id="phone" name="phone" required>
+            <label for="phone">Phone</label>
+            <input id="phone" name="phone" required>
 
-      <label for="address">Address</label>
-      <input id="address" name="address">
+            <label for="address">Address</label>
+            <input id="address" name="address">
 
-      <label for="website">Website</label>
-      <input id="website" name="website" placeholder="https://example.org">
+            <label for="website">Website</label>
+            <input id="website" name="website" placeholder="https://example.org">
 
-      <label for="level">Membership Level</label>
-      <select id="level" name="level">
-        <option value="3">Gold</option>
-        <option value="2">Silver</option>
-        <option value="1" selected>Bronze</option>
-      </select>
+            <label for="level">Membership Level</label>
+            <select id="level" name="level">
+                <option value="3">Gold</option>
+                <option value="2">Silver</option>
+                <option value="1" selected>Bronze</option>
+            </select>
 
-      <label for="notes">Notes</label>
-      <textarea id="notes" name="notes" rows="4"></textarea>
+            <label for="notes">Notes</label>
+            <textarea id="notes" name="notes" rows="4"></textarea>
 
-      <button type="submit">Apply to Join</button>
-    </form>
+            <button type="submit">Apply to Join</button>
+        </form>
 
-    <p class="muted">Note: This form stores applications locally for demo purposes. In production, configure a server endpoint.</p>
-  </main>
+        <p class="muted">Note: This form stores applications locally for demo purposes. In production, configure a
+            server endpoint.</p>
+    </main>
 
-  <footer>
-    <p>&copy; <span id="year"></span> <strong>Fumu Sports Foundation</strong></p>
-    <p id="lastModified"></p>
-  </footer>
+    <footer>
+        <p>&copy; <span id="year"></span> <strong>Fumu Sports Foundation</strong></p>
+        <p id="lastModified"></p>
+    </footer>
 
-  <script defer src="styles/scripts/home.js"></script>
-  <script defer src="styles/scripts/fumu-sports.js"></script>
+    <script defer src="styles/scripts/home.js"></script>
+    <script defer src="styles/scripts/fumu-sports.js"></script>
 </body>
+
 </html>
