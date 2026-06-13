@@ -8,7 +8,7 @@
      #ffffff  White          – cards, nav text
 ===================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Roboto:wght@400;500&family=Open+Sans:wght@400;600&display=swap');
+/* Fonts are loaded via HTML <link> to avoid @import (performance & audit) */
 
 /* ── RESET ── */
 *,
@@ -72,6 +72,11 @@ header {
   top: 0;
   z-index: 100;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* If header element also uses the generic .card class, ensure it keeps the primary background */
+header.card {
+  background-color: var(--primary);
 }
 
 .header-inner {

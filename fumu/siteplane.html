@@ -1,233 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="author" content="Byakagaba Wycliff" />
-  <meta name="description" content="Site plan for Fumu Sports Foundation — sports programs, athlete development, coaching, rankings, and charity initiatives in Uganda." />
-  <title>Fumu Sports Foundation | Site Plan</title>
-  <link rel="stylesheet" href="styles/fumu-sports.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Byakagaba Wycliff" />
+    <meta name="description"
+        content="Site plan for Fumu Sports Foundation — sports programs, athlete development, coaching, rankings, and charity initiatives in Uganda." />
+    <title>Fumu Sports Foundation | Site Plan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/fumu-sports.css" />
+    <link rel="canonical" href="http://localhost:5500/siteplane.html">
+    <meta property="og:title" content="Fumu Sports Foundation — Site Plan & Programs Overview">
+    <meta property="og:description" content="Comprehensive site plan describing Fumu Sports Foundation's programs, wireframes, brand, and service plans supporting youth sports and community impact.">
+    <meta property="og:image" content="http://localhost:5500/images/fumu.jpg">
+    <meta property="og:url" content="http://localhost:5500/siteplane.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="images/fumu.jpg" type="image/jpeg">
+    <link rel="shortcut icon" href="images/fumu.jpg">
+    <link rel="manifest" href="/manifest.json">
 </head>
+
 <body>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-  <!-- HEADER -->
-  <header>
-    <div class="header-inner">
-      <div class="logo-wrap">
-        <div class="logo-circle" aria-hidden="true">FSF</div>
-        <div class="brand-text">
-          <h1>Fumu Sports Foundation</h1>
-          <p>Site Plan Document — Byakagaba Wycliff</p>
-        </div>
-      </div>
-      <nav aria-label="Site plan navigation">
-        <ul>
-          <li><a href="#site-name">Name</a></li>
-          <li><a href="#purpose">Purpose</a></li>
-          <li><a href="#scenarios">Scenarios</a></li>
-          <li><a href="#colors">Colors</a></li>
-          <li><a href="#typography">Typography</a></li>
-          <li><a href="#wireframes">Wireframes</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-
-    <!-- 01 SITE NAME -->
-    <section class="card" id="site-name">
-      <div class="section-label">01 — Site Name</div>
-      <h2>Fumu Sports Foundation</h2>
-      <p>
-        The name <strong>Fumu Sports Foundation</strong> was chosen because it represents a sports
-        development organization dedicated to athlete growth, community sports programs, youth
-        empowerment, and charity initiatives. <em>"Fumu"</em> reflects community identity and
-        strength in the local Ugandan context, while <em>"Foundation"</em> signals a structured,
-        trustworthy organization committed to long-term impact across Uganda and East Africa.
-      </p>
-    </section>
-
-    <!-- 02 PURPOSE -->
-    <section class="card" id="purpose">
-      <div class="section-label">02 — Site Purpose</div>
-      <h2>What This Website Does</h2>
-      <p>The website is the primary digital home of the Fumu Sports Foundation, providing:</p>
-      <ul>
-        <li>Information on sports training programs for youth and adults across Uganda</li>
-        <li>Athlete rankings at local, East African, and international levels</li>
-        <li>Coaching staff profiles and credentials per sport</li>
-        <li>Upcoming competitions, leagues, and tournaments calendar</li>
-        <li>Sponsorship and partnership opportunities for businesses and organizations</li>
-        <li>Charity initiative details — free sports training for street children</li>
-        <li>Athlete lifestyle content: training, nutrition, education balance, and career paths</li>
-      </ul>
-    </section>
-
-    <!-- 03 SCENARIOS -->
-    <section class="card" id="scenarios">
-      <div class="section-label">03 — Scenarios</div>
-      <h2>Who Visits and Why</h2>
-      <ul class="scenario-list">
-        <li>
-          <span class="scenario-icon" aria-hidden="true">🏃</span>
-          <span>"Which sports programs can young athletes join in Uganda, and what is the registration process?"</span>
-        </li>
-        <li>
-          <span class="scenario-icon" aria-hidden="true">🏆</span>
-          <span>"How are players ranked locally and internationally, and where can I see current standings?"</span>
-        </li>
-        <li>
-          <span class="scenario-icon" aria-hidden="true">💼</span>
-          <span>"How can my company sponsor sports development programs or charity initiatives in Uganda?"</span>
-        </li>
-        <li>
-          <span class="scenario-icon" aria-hidden="true">🤝</span>
-          <span>"Where can street children access free sports training and mentorship near me?"</span>
-        </li>
-      </ul>
-    </section>
-
-    <!-- 04 COLOR SCHEMA -->
-    <section class="card" id="colors">
-      <div class="section-label">04 — Color Schema</div>
-      <h2>Brand Colors</h2>
-      <p>All four colors are actively applied throughout this document:</p>
-      <div class="color-grid">
-        <div class="swatch">
-          <div class="swatch-block swatch-primary"></div>
-          <div class="swatch-info">
-            <strong>#1f6f4a</strong>
-            <span>Primary Green</span>
-            <small>Headings, nav bar, section borders, logo</small>
-          </div>
-        </div>
-        <div class="swatch">
-          <div class="swatch-block swatch-accent"></div>
-          <div class="swatch-info">
-            <strong>#1e88e5</strong>
-            <span>Accent Blue</span>
-            <small>Buttons, links, highlights, scenario borders</small>
-          </div>
-        </div>
-        <div class="swatch">
-          <div class="swatch-block swatch-bg"></div>
-          <div class="swatch-info">
-            <strong>#f4fbff</strong>
-            <span>Light Background</span>
-            <small>Page background, card surfaces, wireframe areas</small>
-          </div>
-        </div>
-        <div class="swatch">
-          <div class="swatch-block swatch-deep"></div>
-          <div class="swatch-info">
-            <strong>#0d3d27</strong>
-            <span>Deep Green</span>
-            <small>Footer, high-contrast headings, dark accents</small>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 05 TYPOGRAPHY -->
-    <section class="card" id="typography">
-      <div class="section-label">05 — Typography</div>
-      <h2>Typefaces</h2>
-      <p>Three Google Fonts are imported and actively used in this document:</p>
-
-      <div class="type-sample">
-        <div class="type-label">Poppins — Headings &amp; Titles</div>
-        <div class="type-poppins">Fumu Sports Foundation</div>
-        <small>Used for all section headings, site name, navigation title, card titles.</small>
-      </div>
-
-      <div class="type-sample">
-        <div class="type-label">Roboto — Body Text</div>
-        <div class="type-roboto">Our mission is to develop athletes and empower communities through sport across Uganda and East Africa.</div>
-        <small>Used for all paragraph text, list items, and general content throughout the site.</small>
-      </div>
-
-      <div class="type-sample">
-        <div class="type-label">Open Sans — Labels, Buttons &amp; Captions</div>
-        <div class="type-opensans">REGISTER NOW → VIEW RANKINGS → BECOME A SPONSOR</div>
-        <small>Used for section labels, call-to-action buttons, captions, and scenario tags.</small>
-      </div>
-    </section>
-
-    <!-- 06 WIREFRAMES -->
-    <section class="card" id="wireframes">
-      <div class="section-label">06 — Wireframes</div>
-      <h2>Page Layout Plans</h2>
-      <p>Visual wireframes for both mobile and desktop home page layouts:</p>
-
-      <div class="wireframe-grid">
-
-        <!-- MOBILE -->
-        <figure class="wireframe-box">
-          <figcaption>📱 Mobile View <small>(320px – 599px)</small></figcaption>
-          <div class="wf-wrap">
-            <div class="wf-row wf-logo">FSF Logo</div>
-            <div class="wf-row wf-hamburger">☰ Menu</div>
-            <div class="wf-row wf-hero">Hero / Banner</div>
-            <div class="wf-row wf-sports">Sports Programs</div>
-            <div class="wf-row wf-rankings">Rankings</div>
-            <div class="wf-row wf-charity">Charity Program</div>
-            <div class="wf-row wf-sponsors">Sponsors</div>
-            <div class="wf-row wf-footer">Footer</div>
-          </div>
-        </figure>
-
-        <!-- DESKTOP -->
-        <figure class="wireframe-box">
-          <figcaption>🖥️ Desktop View <small>(900px+)</small></figcaption>
-          <div class="wf-wrap">
-            <div class="wf-row wf-nav">Logo + Navigation Bar</div>
-            <div class="wf-row wf-hero">Hero Banner — Full Width</div>
-            <div class="wf-row-cols">
-              <div class="wf-col wf-sports">Sports Grid</div>
-              <div class="wf-col wf-rankings">Rankings</div>
+    <!-- HEADER -->
+    <header>
+        <div class="header-inner">
+            <div class="logo-wrap">
+                <div class="logo-circle" aria-hidden="true">FSF</div>
+                <div class="brand-text">
+                    <h1>Fumu Sports Foundation</h1>
+                    <p>Site Plan Document — Byakagaba Wycliff</p>
+                </div>
             </div>
-            <div class="wf-row wf-charity">Street Children Charity Section</div>
-            <div class="wf-row wf-coaches">Coaches Row</div>
-            <div class="wf-row wf-sponsors">Sponsors Row</div>
-            <div class="wf-row wf-footer">Footer</div>
-          </div>
-        </figure>
+            <nav aria-label="Site plan navigation">
+                <ul>
+                    <li><a href="#site-name">Name</a></li>
+                    <li><a href="#purpose">Purpose</a></li>
+                    <li><a href="#scenarios">Scenarios</a></li>
+                    <li><a href="#colors">Colors</a></li>
+                    <li><a href="#typography">Typography</a></li>
+                    <li><a href="#wireframes">Wireframes</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-      </div>
+    <main>
 
-      <!-- Actual wireframe images -->
-      <div class="wireframe-images">
-        <figure>
-          <img
-            src="images/mobile-wireframe.png"
-            alt="Mobile wireframe sketch for Fumu Sports Foundation home page"
-            width="300"
-            loading="lazy"
-          />
-          <figcaption>Mobile Wireframe</figcaption>
-        </figure>
-        <figure>
-          <img
-            src="images/desktop-wireframe.png"
-            alt="Desktop wireframe sketch for Fumu Sports Foundation home page"
-            width="500"
-            loading="lazy"
-          />
-          <figcaption>Desktop Wireframe</figcaption>
-        </figure>
-      </div>
-    </section>
+        <!-- 01 SITE NAME -->
+        <section class="card" id="site-name">
+            <div class="section-label">01 — Site Name</div>
+            <h2>Fumu Sports Foundation</h2>
+            <p>
+                The name <strong>Fumu Sports Foundation</strong> was chosen because it represents a sports
+                development organization dedicated to athlete growth, community sports programs, youth
+                empowerment, and charity initiatives. <em>"Fumu"</em> reflects community identity and
+                strength in the local Ugandan context, while <em>"Foundation"</em> signals a structured,
+                trustworthy organization committed to long-term impact across Uganda and East Africa.
+            </p>
+        </section>
 
-  </main>
+        <!-- 02 PURPOSE -->
+        <section class="card" id="purpose">
+            <div class="section-label">02 — Site Purpose</div>
+            <h2>What This Website Does</h2>
+            <p>The website is the primary digital home of the Fumu Sports Foundation, providing:</p>
+            <ul>
+                <li>Information on sports training programs for youth and adults across Uganda</li>
+                <li>Athlete rankings at local, East African, and international levels</li>
+                <li>Coaching staff profiles and credentials per sport</li>
+                <li>Upcoming competitions, leagues, and tournaments calendar</li>
+                <li>Sponsorship and partnership opportunities for businesses and organizations</li>
+                <li>Charity initiative details — free sports training for street children</li>
+                <li>Athlete lifestyle content: training, nutrition, education balance, and career paths</li>
+            </ul>
+        </section>
 
-  <!-- FOOTER -->
-  <footer>
-    <p><strong>Fumu Sports Foundation</strong> — Site Plan Document</p>
-    <p>Byakagaba Wycliff &nbsp;|&nbsp; WDD231 &nbsp;|&nbsp; &copy; <span id="year"></span></p>
-    <p id="lastModified"></p>
-  </footer>
+        <!-- 03 SCENARIOS -->
+        <section class="card" id="scenarios">
+            <div class="section-label">03 — Scenarios</div>
+            <h2>Who Visits and Why</h2>
+            <ul class="scenario-list">
+                <li>
+                    <span class="scenario-icon" aria-hidden="true">🏃</span>
+                    <span>"Which sports programs can young athletes join in Uganda, and what is the registration
+                        process?"</span>
+                </li>
+                <li>
+                    <span class="scenario-icon" aria-hidden="true">🏆</span>
+                    <span>"How are players ranked locally and internationally, and where can I see current
+                        standings?"</span>
+                </li>
+                <li>
+                    <span class="scenario-icon" aria-hidden="true">💼</span>
+                    <span>"How can my company sponsor sports development programs or charity initiatives in
+                        Uganda?"</span>
+                </li>
+                <li>
+                    <span class="scenario-icon" aria-hidden="true">🤝</span>
+                    <span>"Where can street children access free sports training and mentorship near me?"</span>
+                </li>
+            </ul>
+        </section>
 
-  <script src="scripts/fumu-sports.js"></script>
+        <!-- 04 COLOR SCHEMA -->
+        <section class="card" id="colors">
+            <div class="section-label">04 — Color Schema</div>
+            <h2>Brand Colors</h2>
+            <p>All four colors are actively applied throughout this document:</p>
+            <div class="color-grid">
+                <div class="swatch">
+                    <div class="swatch-block swatch-primary"></div>
+                    <div class="swatch-info">
+                        <strong>#1f6f4a</strong>
+                        <span>Primary Green</span>
+                        <small>Headings, nav bar, section borders, logo</small>
+                    </div>
+                </div>
+                <div class="swatch">
+                    <div class="swatch-block swatch-accent"></div>
+                    <div class="swatch-info">
+                        <strong>#1e88e5</strong>
+                        <span>Accent Blue</span>
+                        <small>Buttons, links, highlights, scenario borders</small>
+                    </div>
+                </div>
+                <div class="swatch">
+                    <div class="swatch-block swatch-bg"></div>
+                    <div class="swatch-info">
+                        <strong>#f4fbff</strong>
+                        <span>Light Background</span>
+                        <small>Page background, card surfaces, wireframe areas</small>
+                    </div>
+                </div>
+                <div class="swatch">
+                    <div class="swatch-block swatch-deep"></div>
+                    <div class="swatch-info">
+                        <strong>#0d3d27</strong>
+                        <span>Deep Green</span>
+                        <small>Footer, high-contrast headings, dark accents</small>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 05 TYPOGRAPHY -->
+        <section class="card" id="typography">
+            <div class="section-label">05 — Typography</div>
+            <h2>Typefaces</h2>
+            <p>Three Google Fonts are imported and actively used in this document:</p>
+
+            <div class="type-sample">
+                <div class="type-label">Poppins — Headings &amp; Titles</div>
+                <div class="type-poppins">Fumu Sports Foundation</div>
+                <small>Used for all section headings, site name, navigation title, card titles.</small>
+            </div>
+
+            <div class="type-sample">
+                <div class="type-label">Roboto — Body Text</div>
+                <div class="type-roboto">Our mission is to develop athletes and empower communities through sport across
+                    Uganda and East Africa.</div>
+                <small>Used for all paragraph text, list items, and general content throughout the site.</small>
+            </div>
+
+            <div class="type-sample">
+                <div class="type-label">Open Sans — Labels, Buttons &amp; Captions</div>
+                <div class="type-opensans">REGISTER NOW → VIEW RANKINGS → BECOME A SPONSOR</div>
+                <small>Used for section labels, call-to-action buttons, captions, and scenario tags.</small>
+            </div>
+        </section>
+
+        <!-- 06 WIREFRAMES -->
+        <section class="card" id="wireframes">
+            <div class="section-label">06 — Wireframes</div>
+            <h2>Page Layout Plans</h2>
+            <p>Visual wireframes for both mobile and desktop home page layouts:</p>
+
+            <div class="wireframe-grid">
+
+                <!-- MOBILE -->
+                <figure class="wireframe-box">
+                    <figcaption>📱 Mobile View <small>(320px – 599px)</small></figcaption>
+                    <div class="wf-wrap">
+                        <div class="wf-row wf-logo">FSF Logo</div>
+                        <div class="wf-row wf-hamburger">☰ Menu</div>
+                        <div class="wf-row wf-hero">Hero / Banner</div>
+                        <div class="wf-row wf-sports">Sports Programs</div>
+                        <div class="wf-row wf-rankings">Rankings</div>
+                        <div class="wf-row wf-charity">Charity Program</div>
+                        <div class="wf-row wf-sponsors">Sponsors</div>
+                        <div class="wf-row wf-footer">Footer</div>
+                    </div>
+                </figure>
+
+                <!-- DESKTOP -->
+                <figure class="wireframe-box">
+                    <figcaption>🖥️ Desktop View <small>(900px+)</small></figcaption>
+                    <div class="wf-wrap">
+                        <div class="wf-row wf-nav">Logo + Navigation Bar</div>
+                        <div class="wf-row wf-hero">Hero Banner — Full Width</div>
+                        <div class="wf-row-cols">
+                            <div class="wf-col wf-sports">Sports Grid</div>
+                            <div class="wf-col wf-rankings">Rankings</div>
+                        </div>
+                        <div class="wf-row wf-charity">Street Children Charity Section</div>
+                        <div class="wf-row wf-coaches">Coaches Row</div>
+                        <div class="wf-row wf-sponsors">Sponsors Row</div>
+                        <div class="wf-row wf-footer">Footer</div>
+                    </div>
+                </figure>
+
+            </div>
+
+            <!-- Actual wireframe images -->
+            <div class="wireframe-images">
+                <figure>
+                    <img src="images/mobile-wireframe.png"
+                        alt="Mobile wireframe sketch for Fumu Sports Foundation home page" width="300" loading="lazy" />
+                    <figcaption>Mobile Wireframe</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/desktop-wireframe.png"
+                        alt="Desktop wireframe sketch for Fumu Sports Foundation home page" width="500"
+                        loading="lazy" />
+                    <figcaption>Desktop Wireframe</figcaption>
+                </figure>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p><strong>Fumu Sports Foundation</strong> — Site Plan Document</p>
+        <p>Byakagaba Wycliff &nbsp;|&nbsp; WDD231 &nbsp;|&nbsp; &copy; <span id="year"></span></p>
+        <p id="lastModified"></p>
+    </footer>
+
+        <script src="styles/scripts/fumu-sports.js"></script>
 </body>
+
 </html>

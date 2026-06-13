@@ -1,0 +1,8 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Fumu Sports Foundation",
+  "url": "http://localhost:5500/",
+  "logo": "http://localhost:5500/images/fumu.jpg",
+  "sameAs": []
+}
