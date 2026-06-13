@@ -1,95 +1,65 @@
-javascript
-// Footer Information
-const yearEl = document.getElementById("year");
-if (yearEl) {
-    yearEl.textContent = new Date().getFullYear();
-}
+// YEAR
+document.getElementById("year").textContent = new Date().getFullYear();
 
-const lastModifiedEl = document.getElementById("lastModified");
-if (lastModifiedEl) {
-    lastModifiedEl.textContent = `Last Modified: ${document.lastModified}`;
-}
+// LAST MODIFIED
+document.getElementById("lastModified").textContent =
+  "Last Modified: " + document.lastModified;
 
-// Visitor Message using localStorage
+// LOCAL STORAGE VISIT MESSAGE
 const visitMessage = document.getElementById("visitMessage");
 
-if (visitMessage) {
-    const lastVisit = localStorage.getItem("lastVisit");
-    const currentDate = Date.now();
+const lastVisit = localStorage.getItem("lastVisit");
+const now = Date.now();
 
-    if (!lastVisit) {
-        visitMessage.textContent =
-            "Welcome! Let us know if you have any questions.";
-    } else {
-        const daysBetween = Math.floor(
-            (currentDate - Number(lastVisit)) / 86400000
-        );
+if (!lastVisit) {
+  visitMessage.textContent = "Welcome! First time visiting Kampala Chamber Discover Page.";
+} else {
+  const days = Math.floor((now - Number(lastVisit)) / 86400000);
 
-        if (daysBetween < 1) {
-            visitMessage.textContent =
-                "Back so soon! Awesome!";
-        } else if (daysBetween === 1) {
-            visitMessage.textContent =
-                "You last visited 1 day ago.";
-        } else {
-            visitMessage.textContent =
-                `You last visited ${daysBetween} days ago.`;
-        }
-    }
-
-    localStorage.setItem("lastVisit", currentDate);
+  if (days < 1) {
+    visitMessage.textContent = "Back so soon! Great to see you again.";
+  } else if (days === 1) {
+    visitMessage.textContent = "You last visited 1 day ago.";
+  } else {
+    visitMessage.textContent = `You last visited ${days} days ago.`;
+  }
 }
 
-// Build Discover Cards from JSON
-const cardsContainer = document.getElementById("places-container");
+localStorage.setItem("lastVisit", now);
+
+// LOAD JSON CARDS
+const container = document.getElementById("places-container");
 
 async function loadPlaces() {
-    try {
-        const response = await fetch("data/places.json");
+  try {
+    const response = await fetch("data/places.json");
+    const places = await response.json();
 
-        if (!response.ok) {
-            throw new Error("Failed to load JSON data.");
-        }
+    places.forEach(place => {
+      const card = document.createElement("article");
+      card.classList.add("card");
 
-        const places = await response.json();
+      card.innerHTML = `
+        <h3>${place.name}</h3>
 
-        places.forEach(place => {
-            const card = document.createElement("article");
-            card.classList.add("card");
+        <figure>
+          <img src="${place.image}" 
+               alt="${place.name}" 
+               loading="lazy">
+        </figure>
 
-            card.innerHTML = `
-                <h2>${place.name}</h2>
+        <p class="address">${place.address}</p>
+        <p>${place.description}</p>
 
-                <figure>
-                    <img
-                        src="${place.image}"
-                        alt="${place.name}"
-                        loading="lazy"
-                        width="400"
-                        height="250">
-                </figure>
+        <a href="${place.url}" target="_blank" class="btn">Learn More</a>
+      `;
 
-                <address>${place.address}</address>
+      container.appendChild(card);
+    });
 
-                <p>${place.description}</p>
-
-                <a
-                    href="${place.url}"
-                    target="_blank"
-                    rel="noopener"
-                    class="button">
-                    Learn More
-                </a>
-            `;
-
-            cardsContainer.appendChild(card);
-        });
-
-    } catch (error) {
-        console.error("Error loading places:", error);
-    }
+  } catch (error) {
+    console.error("Error loading places:", error);
+  }
 }
 
-if (cardsContainer) {
-    loadPlaces();
-}
+loadPlaces();
