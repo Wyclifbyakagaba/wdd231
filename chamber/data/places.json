@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Kasubi Tombs",
+    "address": "Kasubi, Kampala",
+    "description": "A UNESCO World Heritage Site and the burial grounds of the Buganda kings. The site showcases traditional architecture and cultural heritage.",
+    "image": "images/kasubi.webp",
+    "url": "https://whc.unesco.org/en/list/1022/"
+  },
+  {
+    "name": "Lake Victoria",
+    "address": "Entebbe, Uganda",
+    "description": "Africa's largest lake and a major tourist attraction offering fishing, boat cruises, and scenic waterfront views.",
+    "image": "images/lake-victoria.webp",
+    "url": "https://en.wikipedia.org/wiki/Lake_Victoria"
+  },
+  {
+    "name": "Uganda Museum",
+    "address": "Kitante Hill, Kampala",
+    "description": "The oldest museum in East Africa featuring exhibits on Uganda's history, culture, archaeology, and natural heritage.",
+    "image": "images/uganda-museum.webp",
+    "url": "https://en.wikipedia.org/wiki/Uganda_Museum"
+  },
+  {
+    "name": "Baháʼí Temple",
+    "address": "Kikaya Hill, Kampala",
+    "description": "The only Baháʼí House of Worship in Africa, surrounded by beautiful gardens and offering panoramic views of Kampala.",
+    "image": "images/bahai-temple.webp",
+    "url": "https://en.wikipedia.org/wiki/Bah%C3%A1%CA%BC%C3%AD_Faith_in_Uganda"
+  },
+  {
+    "name": "Gaddafi National Mosque",
+    "address": "Old Kampala",
+    "description": "One of Uganda's largest mosques, providing stunning views of Kampala from its minaret and showcasing impressive architecture.",
+    "image": "images/gaddafi-mosque.webp",
+    "url": "https://en.wikipedia.org/wiki/Uganda_National_Mosque"
+  },
+  {
+    "name": "Wandegeya Market",
+    "address": "Wandegeya, Kampala",
+    "description": "A vibrant local market where visitors can experience fresh produce, local foods, and everyday Kampala commerce.",
+    "image": "images/wandegeya-market.webp",
+    "url": "https://www.kcca.go.ug"
+  },
+  {
+    "name": "Entebbe Botanical Gardens",
+    "address": "Entebbe, Uganda",
+    "description": "A peaceful nature destination with diverse plant species, birdlife, and scenic views along the shores of Lake Victoria.",
+    "image": "images/botanical-gardens.webp",
+    "url": "https://en.wikipedia.org/wiki/Entebbe_Botanical_Gardens"
+  },
+  {
+    "name": "Nakasero Market",
+    "address": "Nakasero, Kampala",
+    "description": "A bustling market known for fresh fruits, vegetables, spices, and a rich display of local commerce and culture.",
+    "image": "images/nakasero-market.webp",
+    "url": "https://www.kcca.go.ug"
+  }
+]
