@@ -200,6 +200,26 @@ main {
   padding: 0 0.6rem 0.5rem;
 }
 
+/* Color Scheme Boxes */
+.color-box {
+  width: 120px;
+  height: 60px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.green {
+  background-color: #1f6f4a;
+}
+
+.blue {
+  background-color: #1e88e5;
+}
+
+.light {
+  background-color: #f4fbff;
+}
+
 /* ── TYPOGRAPHY BOXES ── */
 .type-box {
   border: 1px solid #cde8d8;

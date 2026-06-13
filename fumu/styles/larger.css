@@ -1,11 +1,6 @@
 /* =====================================================
-   FUMU SPORTS FOUNDATION — fumu-sports.css
-   Colors:
-     #1f6f4a  Primary Green  – nav, headings, logo
-     #1e88e5  Accent Blue    – buttons, links, labels
-     #f4fbff  Light BG       – page background
-     #0d3d27  Deep Green     – footer, dark sections
-     #ffffff  White          – cards, nav text
+   FUMU SPORTS FOUNDATION — larger.css (copy of fumu-sports.css)
+   Purpose: larger viewport / non-mobile styles to be loaded after small.css
 ===================================================== */
 
 /* Fonts are loaded via HTML <link> to avoid @import (performance & audit) */
