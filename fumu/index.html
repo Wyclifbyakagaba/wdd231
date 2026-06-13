@@ -1,73 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="author" content="Byakagaba Wycliff">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fumu Sports Foundation | Site Plan</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Byakagaba Wycliff" />
+  <meta name="description" content="Site plan for Fumu Sports Foundation — sports programs, athlete development, coaching, rankings, and charity initiatives in Uganda." />
    <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-
-  <meta name="description" content="Site plan for Fumu Sports Foundation covering sports programs, athletes, coaching, rankings, and charity sports initiatives.">
-
-  <style>
-    body {
-      font-family: 'Roboto', sans-serif;
-      margin: 2rem;
-      line-height: 1.6;
-      background: #f4fbff;
-      color: #1b1b1b;
-    }
-
-    h1, h2, h3{
-      font-family: 'Poppins', sans-serif;
-      color: #1f6f4a; /* green */
-    }
-    strong {
-  font-family: 'Open Sans', sans-serif;
-    }
-    
-  section {
-      background: #ffffff;
-      padding: 1.2rem;
-      margin-bottom: 1rem;
-      border-radius: 10px;
-      border-left: 6px solid #1f6f4a;
-    }
-
-    .color-box {
-      display: inline-block;
-      width: 120px;
-      height: 40px;
-      margin-right: 10px;
-      border-radius: 6px;
-    }
-
-    .green { background: #1f6f4a; }
-    .blue { background: #1e88e5; }
-    .light { background: #f4fbff; border: 1px solid #ccc; }
-  </style>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/fumu-sports.css">
+ 
+  <meta name="description"
+    content="Site plan for Fumu Sports Foundation covering sports programs, athletes, coaching, rankings, and charity sports initiatives.">
+  <title>Home | Fumu Sports Foundation</title>
+  <link rel="stylesheet" href="styles/fumu-sports.css" />
 </head>
-
 <body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="header-inner">
+      <div class="logo-wrap">
+        <div class="logo-circle" aria-hidden="true">FSF</div>
+        <div class="brand-text">
+          <h1>Fumu Sports Foundation</h1>
+    
+        </div>
+      </div>
+      <nav aria-label="Site plan navigation">
+        <ul>
+          <li><a href="#site-name">Name</a></li>
+          <li><a href="#purpose">Purpose</a></li>
+          <li><a href="#scenarios">Scenarios</a></li>
+          <li><a href="#colors">Colors</a></li>
+          <li><a href="#typography">Typography</a></li>
+          <li><a href="#wireframes">Wireframes</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
   <h1>Fumu Sports Foundation – Site Plan</h1>
 
   <!-- SITE NAME -->
-  <section>
+  <section id="site-name">
     <h2>Site Name</h2>
     <p><strong>Fumu Sports Foundation</strong></p>
     <p>
-     The name "Fumu Sports Foundation" was chosen because it represents
-     a sports development organization dedicated to athlete growth,
-     community sports programs, youth empowerment, and charity initiatives.
+      The name "Fumu Sports Foundation" was chosen because it represents
+      a sports development organization dedicated to athlete growth,
+      community sports programs, youth empowerment, and charity initiatives.
     </p>
   </section>
 
   <!-- SITE PURPOSE -->
-  <section>
+  <section id="purpose">
     <h2>Site Purpose</h2>
     <p>
       The website will provide structured information about sports training programs, athlete rankings,
@@ -77,7 +65,7 @@
   </section>
 
   <!-- SCENARIOS -->
-  <section>
+  <section id="scenarios">
     <h2>Scenarios</h2>
     <ul>
       <li>Which sports programs can young athletes join in Uganda?</li>
@@ -163,7 +151,7 @@
   </section>
 
   <!-- COLOR SCHEME -->
-  <section>
+  <section id="colors">
     <h2>Color Scheme</h2>
 
     <div class="color-box green"></div> #1f6f4a – Primary brand color (headings, nav)
@@ -176,18 +164,18 @@
   </section>
 
   <!-- TYPOGRAPHY -->
-   <section>
-  <h2>Typography</h2>
+  <section id="typography">
+    <h2>Typography</h2>
 
-  <p><strong>Poppins</strong> will be used for all headings and titles.</p>
+    <p><strong>Poppins</strong> will be used for all headings and titles.</p>
 
-  <p><strong>Roboto</strong> will be used for body text and general content.</p>
+    <p><strong>Roboto</strong> will be used for body text and general content.</p>
 
-  <p><strong>Open Sans</strong> will be used for highlighted text, buttons, and labels.</p>
-</section>
+    <p><strong>Open Sans</strong> will be used for highlighted text, buttons, and labels.</p>
+  </section>
 
   <!-- WIREFRAMES -->
-  <section>
+  <section id="wireframes">
     <h2>Wireframes</h2>
 
     <h3>Mobile</h3>
@@ -214,4 +202,13 @@ Footer
   </section>
 
 </body>
+<footer>
+  <p>&copy; <span id="year"></span> <strong>Fumu Sports Foundation</strong></p>
+  <p id="lastModified"></p>
+  <p id="visit-msg" class="visit-msg"></p>
+</footer>
+
+<script src="styles/scripts/home.js"></script>
+<script src="styles/scripts/fumu-sports.js"></script>
+
 </html>

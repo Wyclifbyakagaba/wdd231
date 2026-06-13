@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us | Fumu Sports Foundation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap" as="style" onload="this.rel='stylesheet'">
+  <noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  </noscript>
+  <link rel="stylesheet" href="styles/fumu-sports.css">
+  <meta name="description" content="Contact Fumu Sports Foundation for sponsorships, programs, or media enquiries.">
+  <link rel="canonical" href="/contacts.html">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="card">
+    <div class="header-inner">
+      <div class="logo-wrap">
+        <div class="logo-circle">FS</div>
+        <div class="brand-text">
+          <h1>Fumu Sports Foundation</h1>
+          <p>Contact</p>
+        </div>
+      </div>
+      <nav id="main-nav">
+        <ul>
+          <li><a href="fumu-sports.html">Home</a></li>
+          <li><a href="about-us.html">About</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="contacts.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1" class="card">
+    <h1>Contact Us</h1>
+
+    <section>
+      <h2>Reach Out</h2>
+      <p>For sponsorship, program enquiries or media, please use the form below or email us directly at <a href="mailto:info@fumusports.org">info@fumusports.org</a>.</p>
+
+      <form id="contact-form" action="#" method="post">
+        <label for="name">Name</label>
+        <input id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+
+    </section>
+
+    <section>
+      <h2>Visit Us</h2>
+      <p>Address: Kololo Sports Ground, Kampala</p>
+      <p>Phone: <a href="tel:+256701234567">+256 701 234 567</a></p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> <strong>Fumu Sports Foundation</strong></p>
+    <p id="lastModified"></p>
+    <p id="visit-msg" class="visit-msg"></p>
+  </footer>
+
+  <script defer src="styles/scripts/home.js"></script>
+  <script defer src="styles/scripts/fumu-sports.js"></script>
+</body>
+</html>

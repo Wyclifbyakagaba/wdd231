@@ -1,0 +1,570 @@
+/* =====================================================
+   FUMU SPORTS FOUNDATION — fumu-sports.css
+   Colors:
+     #1f6f4a  Primary Green  – nav, headings, logo
+     #1e88e5  Accent Blue    – buttons, links, labels
+     #f4fbff  Light BG       – page background
+     #0d3d27  Deep Green     – footer, dark sections
+     #ffffff  White          – cards, nav text
+===================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Roboto:wght@400;500&family=Open+Sans:wght@400;600&display=swap');
+
+/* ── RESET ── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Skip link (accessibility) */
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.skip-link:focus {
+  left: 1rem;
+  top: 1rem;
+  width: auto;
+  height: auto;
+  background: var(--white);
+  color: var(--primary);
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  z-index: 9999;
+}
+
+/* ── TOKENS ── */
+:root {
+  --primary: #1f6f4a;
+  --accent: #1e88e5;
+  --bg: #f4fbff;
+  --deep: #0d3d27;
+  --white: #ffffff;
+  --text: #1a2e22;
+  --muted: #5a7a6a;
+  --border: #cde8d8;
+  --radius: 10px;
+  --shadow: 0 2px 14px rgba(31, 111, 74, 0.10);
+}
+
+/* ── BASE ── */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+}
+
+/* ── HEADER ── */
+header {
+  background-color: var(--primary);
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.logo-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.logo-circle {
+  width: 48px;
+  height: 48px;
+  background-color: var(--accent);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  font-size: 1rem;
+  color: var(--white);
+  flex-shrink: 0;
+}
+
+.brand-text h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--white);
+  line-height: 1.2;
+}
+
+.brand-text p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.72rem;
+  color: #b2dfc5;
+}
+
+/* ── NAV ── */
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2rem;
+}
+
+nav a {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #b2dfc5;
+  text-decoration: none;
+  padding: 0.3rem 0.7rem;
+  border-radius: 5px;
+  transition: background 0.2s, color 0.2s;
+}
+
+nav a:hover,
+nav a:focus {
+  background: rgba(255, 255, 255, 0.15);
+  color: var(--white);
+  outline: none;
+}
+
+/* ── MAIN ── */
+main {
+  max-width: 1000px;
+  margin: 2.5rem auto;
+  padding: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* ── CARD (each section) ── */
+.card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 2rem 2.2rem;
+  box-shadow: var(--shadow);
+}
+
+/* ── SECTION LABEL ── */
+.section-label {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.4rem;
+}
+
+/* ── SECTION HEADING ── */
+.card h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 1rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 2px solid var(--border);
+}
+
+/* ── BODY TEXT ── */
+.card p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.95rem;
+  color: var(--text);
+  margin-bottom: 0.75rem;
+}
+
+.card ul {
+  padding-left: 1.3rem;
+  margin-top: 0.5rem;
+}
+
+.card ul li {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.93rem;
+  color: var(--text);
+  margin-bottom: 0.4rem;
+}
+
+/* ── SITE NAME DISPLAY ── */
+#site-name h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--primary);
+  border-bottom: none;
+  margin-bottom: 0.6rem;
+}
+
+/* ── SCENARIOS ── */
+.scenario-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.scenario-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  background: var(--bg);
+  border-left: 4px solid var(--accent);
+  padding: 0.75rem 1rem;
+  border-radius: 0 var(--radius) var(--radius) 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.90rem;
+  color: var(--text);
+}
+
+.scenario-icon {
+  font-size: 1.1rem;
+  flex-shrink: 0;
+  margin-top: 0.05rem;
+}
+
+/* ── COLOR SWATCHES ── */
+.color-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 0.75rem;
+}
+
+.swatch {
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+.swatch-block {
+  height: 70px;
+}
+
+.swatch-primary {
+  background-color: #1f6f4a;
+}
+
+.swatch-accent {
+  background-color: #1e88e5;
+}
+
+.swatch-bg {
+  background-color: #f4fbff;
+  border-bottom: 1px solid var(--border);
+}
+
+.swatch-deep {
+  background-color: #0d3d27;
+}
+
+.swatch-info {
+  padding: 0.65rem 0.9rem;
+  background: var(--white);
+}
+
+.swatch-info strong {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--primary);
+  display: block;
+}
+
+.swatch-info span {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.82rem;
+  color: var(--text);
+  display: block;
+}
+
+.swatch-info small {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.73rem;
+  color: var(--muted);
+}
+
+/* ── TYPOGRAPHY SAMPLES ── */
+.type-sample {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem 1.2rem;
+  margin-bottom: 1rem;
+  background: var(--bg);
+}
+
+.type-sample:last-of-type {
+  margin-bottom: 0;
+}
+
+.type-label {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.70rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: var(--accent);
+  margin-bottom: 0.4rem;
+}
+
+.type-poppins {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 0.25rem;
+}
+
+.type-roboto {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  color: var(--text);
+  margin-bottom: 0.25rem;
+}
+
+.type-opensans {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 0.25rem;
+  letter-spacing: 0.03em;
+}
+
+.type-sample small {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+
+/* ── WIREFRAME GRID ── */
+.wireframe-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+@media (max-width: 620px) {
+  .wireframe-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.wireframe-box {
+  border: 2px dashed var(--border);
+  border-radius: var(--radius);
+  padding: 1rem;
+  background: var(--bg);
+}
+
+.wireframe-box figcaption {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 0.85rem;
+  text-align: center;
+}
+
+.wireframe-box figcaption small {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.70rem;
+  color: var(--muted);
+  font-weight: 400;
+  display: block;
+}
+
+/* wireframe rows */
+.wf-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.wf-row {
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.68rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+}
+
+.wf-row-cols {
+  display: flex;
+  gap: 5px;
+}
+
+.wf-col {
+  flex: 1;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.65rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+}
+
+/* row heights & colors */
+.wf-logo {
+  height: 38px;
+  background: var(--primary);
+  color: var(--white);
+}
+
+.wf-hamburger {
+  height: 30px;
+  background: #b2dfc5;
+}
+
+.wf-nav {
+  height: 38px;
+  background: var(--primary);
+  color: var(--white);
+}
+
+.wf-hero {
+  height: 80px;
+  background: var(--accent);
+  color: var(--white);
+  font-size: 0.75rem;
+}
+
+.wf-sports {
+  height: 65px;
+  background: var(--border);
+}
+
+.wf-rankings {
+  height: 50px;
+  background: #ddf0e8;
+}
+
+.wf-charity {
+  height: 45px;
+  background: #fef3cd;
+  color: #7a5c00;
+}
+
+.wf-coaches {
+  height: 42px;
+  background: #e3f0ff;
+  color: #1a4a8a;
+}
+
+.wf-sponsors {
+  height: 36px;
+  background: #eee;
+}
+
+.wf-footer {
+  height: 32px;
+  background: var(--deep);
+  color: var(--white);
+}
+
+/* wireframe image previews */
+.wireframe-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  justify-content: center;
+}
+
+.wireframe-images figure {
+  text-align: center;
+}
+
+.wireframe-images img {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  max-width: 100%;
+  box-shadow: var(--shadow);
+}
+
+.wireframe-images figcaption {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.78rem;
+  color: var(--muted);
+  margin-top: 0.4rem;
+}
+
+/* ── FOOTER ── */
+footer {
+  background-color: var(--deep);
+  color: #b2dfc5;
+  text-align: center;
+  padding: 1.5rem 2rem;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.82rem;
+  margin-top: 1rem;
+}
+
+footer strong {
+  color: var(--white);
+}
+
+footer p {
+  margin-bottom: 0.25rem;
+}
+
+#lastModified {
+  color: #7ab99a;
+  font-size: 0.75rem;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 600px) {
+  .header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    gap: 0;
+  }
+
+  .card {
+    padding: 1.25rem;
+  }
+
+  #site-name h2 {
+    font-size: 1.5rem;
+  }
+
+  .color-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}

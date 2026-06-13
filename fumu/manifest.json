@@ -1,0 +1,16 @@
+{
+    "name": "Fumu Sports Foundation",
+    "short_name": "FumuSports",
+    "start_url": ".",
+    "display": "standalone",
+    "type": "website",
+    "background_color": "#f4fbff",
+    "theme_color": "#1f6f4a",
+    "icons": [
+        {
+            "src": "images/mobile-wireframe.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        }
+    ]
+}

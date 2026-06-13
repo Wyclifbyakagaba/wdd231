@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Directory — Fumu Sports Foundation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap"
+        as="style" onload="this.rel='stylesheet'">
+    <noscript>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap"
+            rel="stylesheet">
+    </noscript>
+    <link rel="stylesheet" href="styles/fumu-sports.css">
+    <meta name="description" content="Directory of members and partners for Fumu Sports Foundation.">
+    <link rel="canonical" href="/directory.html">
+
+    <script defer src="styles/scripts/home.js"></script>
+    <script defer src="styles/scripts/directory.js"></script>
+
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="card">
+        <div class="header-inner">
+            <div class="logo-wrap">
+                <div class="logo-circle">FS</div>
+                <div class="brand-text">
+                    <h1>Fumu Sports Foundation</h1>
+                    <p>Directory</p>
+                </div>
+            </div>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="fumu-sports.html">Home</a></li>
+                    <li><a href="about-us.html">About</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="contacts.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main" tabindex="-1" class="card">
+        <h2 class="section-label">Directory</h2>
+
+        <h1>Member Directory</h1>
+
+        <div class="controls">
+            <input id="search-input" type="search" placeholder="Search members by name, location, or tagline"
+                aria-label="Search members">
+
+            <label for="filter-level" class="type-label">Filter by Level</label>
+            <select id="filter-level">
+                <option value="0">All Levels</option>
+                <option value="3">Gold</option>
+                <option value="2">Silver</option>
+                <option value="1">Bronze</option>
+            </select>
+
+            <button id="grid-view" aria-pressed="true">Grid</button>
+            <button id="list-view" aria-pressed="false">List</button>
+        </div>
+
+        <div id="members-container" class="members-grid"></div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> <strong>Fumu Sports Foundation</strong></p>
+        <p id="lastModified"></p>
+        <p id="visit-msg" class="visit-msg"></p>
+    </footer>
+
+   </body>
+
+</html>

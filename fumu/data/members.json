@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "name": "Kampala Sports Academy",
+    "tagline": "Developing champions since 2005",
+    "address": "Plot 14 Nakasero Road, Kampala",
+    "phone": "+256 701 234 567",
+    "website": "https://kampalasportsacademy.ug",
+      "image": "member-kampala-academy.jpg",
+    "membershipLevel": 3
+  },
+  {
+    "id": 2,
+    "name": "Uganda Boxing Federation",
+    "tagline": "Home of Ugandan boxing excellence",
+    "address": "Lugogo Indoor Stadium, Kampala",
+    "phone": "+256 702 345 678",
+    "website": "https://ugandaboxing.org",
+      "image": "boxing-fed.webp",
+    "membershipLevel": 3
+  },
+  {
+    "id": 3,
+    "name": "East Africa Athletics Club",
+    "tagline": "Running for gold across East Africa",
+    "address": "Namboole Stadium, Wakiso",
+    "phone": "+256 703 456 789",
+    "website": "https://eaac.co.ug",
+      "image": "member-eaac.jpg",
+    "membershipLevel": 2
+  },
+  {
+    "id": 4,
+    "name": "Jinja Nile Runners",
+    "tagline": "Marathon training at the Source of the Nile",
+    "address": "Nile Crescent, Jinja",
+    "phone": "+256 704 567 890",
+    "website": "https://nilerunners.ug",
+      "image": "member-nile-runners.jpg",
+    "membershipLevel": 2
+  },
+  {
+    "id": 5,
+    "name": "Fumu Youth Football Club",
+    "tagline": "Empowering youth through the beautiful game",
+    "address": "Kololo Sports Ground, Kampala",
+    "phone": "+256 705 678 901",
+    "website": "https://fumuyouthfc.org",
+      "image": "member-fumu -youth.jpg",
+    "membershipLevel": 3
+  },
+  {
+    "id": 6,
+    "name": "Entebbe Aquatics Centre",
+    "tagline": "Water sports training on Lake Victoria",
+    "address": "Lake Victoria Shores, Entebbe",
+    "phone": "+256 706 789 012",
+    "website": "https://entebbeaquatics.ug",
+      "image": "membr-entebbe-acquatics.jpg",
+    "membershipLevel": 2
+  },
+  {
+    "id": 7,
+    "name": "Rwenzori Trail Runners",
+    "tagline": "High-altitude conditioning in the Mountains of the Moon",
+    "address": "Kasese Town, Western Uganda",
+    "phone": "+256 707 890 123",
+    "website": "https://rwenzorirunners.ug",
+      "image": "memebr-rwenzori.jpg",
+    "membershipLevel": 1
+  },
+  {
+    "id": 8,
+    "name": "Street Kids Sports Initiative",
+    "tagline": "Sport as a pathway out of the streets",
+    "address": "Old Kampala, Kampala",
+    "phone": "+256 708 901 234",
+    "website": "https://streetkidssports.org",
+      "image": "member-street-kids.jpg",
+    "membershipLevel": 1
+  },
+  {
+    "id": 9,
+    "name": "Ndere Cultural Sports",
+    "tagline": "Ekigwo wrestling and traditional sports heritage",
+    "address": "Ntinda, Kampala",
+    "phone": "+256 709 012 345",
+    "website": "https://nderesports.ug",
+      "image": "member-ndere.jpg",
+    "membershipLevel": 2
+  },
+  {
+    "id": 10,
+    "name": "Pearl of Africa Tennis Club",
+    "tagline": "Serving up excellence in Uganda tennis",
+    "address": "Lugogo, Kampala",
+    "phone": "+256 710 123 456",
+    "website": "https://pearltennis.ug",
+      "image": "member-pearl-tennis.svg",
+    "membershipLevel": 1
+  }
+]

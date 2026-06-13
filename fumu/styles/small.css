@@ -1,0 +1,361 @@
+/* ================================================
+   small.css — Mobile First Base Styles
+   Fumu Sports Foundation | Site Plan
+   Colors: #1f6f4a | #1e88e5 | #f4fbff | #0d3d27
+================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Roboto:wght@400;500&family=Open+Sans:wght@400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4fbff;
+  color: #1a2e22;
+  line-height: 1.7;
+}
+
+/* ── HEADER ── */
+header {
+  background-color: #1f6f4a;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+header .logo {
+  height: 50px;
+  width: auto;
+  border-radius: 50%;
+}
+
+header h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+/* ── HAMBURGER BUTTON ── */
+#menuBtn {
+  background: none;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  font-size: 1.4rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+/* ── NAV — hidden by default on mobile ── */
+#navMenu {
+  display: none;
+  width: 100%;
+}
+
+#navMenu.open {
+  display: block;
+}
+
+#navMenu ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+#navMenu a {
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #b2dfc5;
+  text-decoration: none;
+  padding: 0.5rem 0.75rem;
+  border-radius: 5px;
+}
+
+#navMenu a:hover,
+#navMenu a.active {
+  background-color: #1e88e5;
+  color: #ffffff;
+}
+
+/* ── MAIN ── */
+main {
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* ── CARDS ── */
+.card {
+  background: #ffffff;
+  border: 1px solid #cde8d8;
+  border-radius: 10px;
+  padding: 1.5rem;
+}
+
+.label {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.70rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.10em;
+  color: #1e88e5;
+  margin-bottom: 0.3rem;
+}
+
+.card h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #1f6f4a;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #cde8d8;
+}
+
+#site-name h2 {
+  font-size: 1.6rem;
+  font-weight: 800;
+  border-bottom: none;
+}
+
+.card p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.93rem;
+  margin-bottom: 0.6rem;
+}
+
+.card ul {
+  padding-left: 1.2rem;
+  margin-top: 0.4rem;
+}
+
+.card ul li {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.91rem;
+  margin-bottom: 0.35rem;
+}
+
+/* ── SCENARIOS ── */
+.scenarios {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-top: 0.5rem;
+}
+
+.scenarios li {
+  background: #f4fbff;
+  border-left: 4px solid #1e88e5;
+  padding: 0.65rem 0.9rem;
+  border-radius: 0 8px 8px 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.88rem;
+}
+
+/* ── COLOR SWATCHES ── */
+.color-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.swatch {
+  border: 1px solid #cde8d8;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.swatch-block {
+  height: 60px;
+}
+
+.swatch strong {
+  display: block;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.78rem;
+  color: #1f6f4a;
+  padding: 0.4rem 0.6rem 0.1rem;
+}
+
+.swatch small {
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.70rem;
+  color: #5a7a6a;
+  padding: 0 0.6rem 0.5rem;
+}
+
+/* ── TYPOGRAPHY BOXES ── */
+.type-box {
+  border: 1px solid #cde8d8;
+  border-radius: 8px;
+  background: #f4fbff;
+  padding: 0.9rem 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.type-box:last-of-type {
+  margin-bottom: 0;
+}
+
+.t-poppins {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #1f6f4a;
+  margin-bottom: 0.2rem;
+}
+
+.t-roboto {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.95rem;
+  color: #1a2e22;
+  margin-bottom: 0.2rem;
+}
+
+.t-opensans {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #1e88e5;
+  margin-bottom: 0.2rem;
+}
+
+.type-box small {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.75rem;
+  color: #5a7a6a;
+}
+
+/* ── WIREFRAME GRID ── */
+.wf-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-top: 1rem;
+}
+
+.wf-box {
+  border: 2px dashed #cde8d8;
+  border-radius: 8px;
+  padding: 0.9rem;
+  background: #f4fbff;
+}
+
+.wf-box figcaption {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #1f6f4a;
+  text-align: center;
+  margin-bottom: 0.6rem;
+}
+
+.wf-box figcaption small {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.68rem;
+  color: #5a7a6a;
+  font-weight: 400;
+  display: block;
+}
+
+.wf-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  margin-bottom: 4px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.68rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #5a7a6a;
+}
+
+.wf-cols {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 4px;
+}
+
+.wf-cols .wf-row {
+  flex: 1;
+  margin-bottom: 0;
+}
+
+/* wireframe row colors */
+.wf-green  { height: 36px; background: #1f6f4a; color: #ffffff; }
+.wf-light  { height: 30px; background: #b2dfc5; }
+.wf-blue   { height: 70px; background: #1e88e5; color: #ffffff; }
+.wf-border { height: 60px; background: #cde8d8; }
+.wf-mint   { height: 48px; background: #ddf0e8; }
+.wf-yellow { height: 44px; background: #fef3cd; color: #7a5c00; }
+.wf-sky    { height: 40px; background: #e3f0ff; color: #1a4a8a; }
+.wf-grey   { height: 34px; background: #eeeeee; }
+.wf-deep   { height: 32px; background: #0d3d27; color: #ffffff; }
+
+/* wireframe image previews */
+.wf-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.25rem;
+  justify-content: center;
+}
+
+.wf-images figure {
+  text-align: center;
+}
+
+.wf-images img {
+  border: 1px solid #cde8d8;
+  border-radius: 8px;
+  max-width: 100%;
+}
+
+.wf-images figcaption {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.75rem;
+  color: #5a7a6a;
+  margin-top: 0.3rem;
+}
+
+/* ── FOOTER ── */
+footer {
+  background-color: #0d3d27;
+  color: #b2dfc5;
+  text-align: center;
+  padding: 1.25rem 1rem;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.80rem;
+}
+
+footer strong {
+  color: #ffffff;
+}
+
+footer p {
+  margin-bottom: 0.2rem;
+}
+
+#lastModified {
+  font-size: 0.72rem;
+  color: #7ab99a;
+}
+
