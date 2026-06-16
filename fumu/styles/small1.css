@@ -1,0 +1,193 @@
+/* =================================================
+   small1.css — FUMU SPORTS FOUNDATION (MOBILE FIRST)
+   Clean production stylesheet
+================================================= */
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BASE */
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #f4fbff;
+  color: #1a2e22;
+  line-height: 1.6;
+}
+
+/* =========================
+   HEADER
+========================= */
+header {
+  background: #1f6f4a;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.logo {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+}
+
+/* MENU BUTTON */
+#menu-btn {
+  background: none;
+  border: 2px solid white;
+  color: white;
+  font-size: 1.5rem;
+  padding: 0.2rem 0.6rem;
+  cursor: pointer;
+}
+
+/* NAV (MOBILE) */
+#main-nav {
+  display: none;
+  width: 100%;
+}
+
+#main-nav.open {
+  display: block;
+}
+
+#main-nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+#main-nav a {
+  display: block;
+  padding: 0.8rem;
+  text-decoration: none;
+  color: #d7f5e5;
+}
+
+#main-nav a:hover,
+#main-nav a.active {
+  background: #1e88e5;
+  color: white;
+}
+
+/* =========================
+   HERO
+========================= */
+.hero {
+  position: relative;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 1.6rem;
+}
+
+.hero p {
+  margin: 0.5rem 0;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+.button {
+  display: inline-block;
+  background: #1e88e5;
+  color: white;
+  padding: 0.7rem 1.2rem;
+  border-radius: 6px;
+  text-decoration: none;
+  margin-top: 0.5rem;
+}
+
+.button.secondary {
+  background: #1f6f4a;
+}
+
+/* =========================
+   SECTIONS
+========================= */
+section {
+  padding: 1.5rem 1rem;
+}
+
+/* =========================
+   CTA
+========================= */
+.cta {
+  background: #0d3d27;
+  color: white;
+  text-align: center;
+  padding: 2.5rem 1rem;
+  margin: 1.5rem 0;
+  border-radius: 10px;
+}
+
+.cta-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-top: 1rem;
+}
+
+/* =========================
+   PROGRAMS
+========================= */
+.program-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.program-grid article {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #cde8d8;
+}
+
+/* =========================
+   ATHLETES CONTAINER
+========================= */
+#athletes-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+/* =========================
+   MODAL
+========================= */
+dialog {
+  border: none;
+  border-radius: 10px;
+  padding: 1rem;
+  max-width: 90%;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+  background: #0d3d27;
+  color: #b2dfc5;
+  text-align: center;
+  padding: 1.2rem;
+}
