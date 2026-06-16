@@ -46,7 +46,7 @@
     "address": "Kololo Sports Ground, Kampala",
     "phone": "+256 705 678 901",
     "website": "https://fumuyouthfc.org",
-      "image": "member-fumu -youth.jpg",
+      "image": "member-fumu-youth.jpg",
     "membershipLevel": 3
   },
   {
@@ -56,7 +56,7 @@
     "address": "Lake Victoria Shores, Entebbe",
     "phone": "+256 706 789 012",
     "website": "https://entebbeaquatics.ug",
-      "image": "membr-entebbe-acquatics.jpg",
+      "image": "member-entebbe-aquatics.jpg",
     "membershipLevel": 2
   },
   {
@@ -66,7 +66,7 @@
     "address": "Kasese Town, Western Uganda",
     "phone": "+256 707 890 123",
     "website": "https://rwenzorirunners.ug",
-      "image": "memebr-rwenzori.jpg",
+      "image": "member-rwenzori.jpg",
     "membershipLevel": 1
   },
   {
@@ -99,4 +99,55 @@
       "image": "member-pearl-tennis.svg",
     "membershipLevel": 1
   }
+,
+{
+  "id": 11,
+  "name": "Mbarara Sports Club",
+  "tagline": "Building future champions in Western Uganda",
+  "address": "High Street, Mbarara",
+  "phone": "+256 711 234 567",
+  "website": "https://mbararasports.ug",
+  "image": "member-mbarara.jpg",
+  "membershipLevel": 2
+},
+{
+  "id": 12,
+  "name": "Gulu Youth Athletics",
+  "tagline": "Developing talent in Northern Uganda",
+  "address": "Gulu Sports Grounds, Gulu",
+  "phone": "+256 712 345 678",
+  "website": "https://guluyouthathletics.ug",
+  "image": "member-gulu.jpg",
+  "membershipLevel": 1
+},
+{
+  "id": 13,
+  "name": "Masaka Football Academy",
+  "tagline": "Training tomorrow's football stars",
+  "address": "Masaka Recreation Grounds",
+  "phone": "+256 713 456 789",
+  "website": "https://masakafootball.ug",
+  "image": "member-masaka.jpg",
+  "membershipLevel": 2
+},
+{
+  "id": 14,
+  "name": "Kabale Mountain Cyclists",
+  "tagline": "Cycling excellence from the hills",
+  "address": "Kabale Town, Kabale",
+  "phone": "+256 714 567 890",
+  "website": "https://kabalecyclists.ug",
+  "image": "member-kabale.jpg",
+  "membershipLevel": 1
+},
+{
+  "id": 15,
+  "name": "Soroti Basketball Association",
+  "tagline": "Growing basketball across Eastern Uganda",
+  "address": "Soroti Sports Complex",
+  "phone": "+256 715 678 901",
+  "website": "https://sorotibasketball.ug",
+  "image": "member-soroti.jpg",
+  "membershipLevel": 3
+}
 ]
