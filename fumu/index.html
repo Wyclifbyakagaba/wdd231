@@ -2,72 +2,66 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="author" content="Byakagaba Wycliff" />
-  <meta name="description"
-    content="Site plan for Fumu Sports Foundation — sports programs, athlete development, coaching, rankings, and charity initiatives in Uganda." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap">
-  <link rel="stylesheet" href="styles/small.css" />
-  <link rel="stylesheet" href="styles/larger.css" />
-  <title>Home | Fumu Sports Foundation</title>
-  <link rel="canonical" href="http://localhost:5500/index.html">
-  <meta property="og:title" content="Fumu Sports Foundation — Home & Programs">
-  <meta property="og:description"
-    content="Discover Fumu Sports Foundation: programs, athlete development, coaching resources, event rankings, and charity initiatives supporting youth across Uganda.">
-  <meta property="og:image" content="http://localhost:5500/images/fumu.jpg">
-  <meta property="og:url" content="http://localhost:5500/index.html">
-  <meta name="twitter:card" content="summary_large_image">
-  <link rel="icon" href="/images/fumu.jpg" type="image/jpeg">
-  <link rel="shortcut icon" href="/images/fumu.jpg">
-  <link rel="apple-touch-icon" href="/images/fumu.jpg">
-  <link rel="manifest" href="/manifest.json">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fumu Sports Foundation | Home page</title>
+    <meta name="description"
+        content="Welcome to the Fumu Sports Foundation home page. Supporting youth sports and community impact in Uganda.">
+    <meta name="author" content="Byakagaba Wycliff">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+    <meta property="og:title" content="Fumu Sports Foundation | Home">
+    <meta property="og:description"
+        content="Supporting youth sports and community impact in Uganda.">
+    <meta property="og:image" content="https://wyclifbyakagaba.github.io/wdd231/fumu/images/fumu.jpg">
+    <meta property="og:url" content="https://wyclifbyakagaba.github.io/wdd231/fumu/index.html">
+    <meta property="og:type" content="website">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css" media="screen and (min-width: 768px)">
+
+    <script src="scripts/home.js" defer></script>
+
 </head>
 
 <body>
+    <header>
+        <img src="images/fumu.jpg" alt="Fumu Sports Foundation Logo" class="logo">
+        <button id="menuBtn" aria-label="Open Navigation Menu">☰</button>
+        <nav id="navMenu" aria-label="Main Navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="form/directory.html">Directory</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="form/discovery.html">Discovery</a></li>
+                <li><a href="form/index.html">Membership Form</a></li>
+                <li><a href="form/thankyou.html">Thank You</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <!-- HEADER -->
-  <header>
-    <div class="header-inner">
-      <div class="logo-wrap">
-        <div class="logo-circle" aria-hidden="true">FSF</div>
-        <div class="brand-text">
-          <h1>Fumu Sports Foundation</h1>
+    <main class="home-main">
+        <section class="hero-block">
+            <img src="images/fumu.jpg" alt="Fumu Sports Foundation hero image">
 
-        </div>
-      </div>
-      <nav aria-label="Site plan navigation">
-        <ul>
-          <li><a href="#site-name">Name</a></li>
-          <li><a href="#purpose">Purpose</a></li>
-          <li><a href="#scenarios">Scenarios</a></li>
-          <li><a href="#colors">Colors</a></li>
-          <li><a href="#typography">Typography</a></li>
-          <li><a href="#wireframes">Wireframes</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+            <div class="cta-overlay">
+                <h1>Empowering Youth Through Sports</h1>
+                <p>Supporting athletic development and community impact in Uganda.</p>
+                <a href="join.html" class="cta-btn">Join Fumu Sports</a>
+            </div>
 
-  <a class="skip-link" href="#main">Skip to content</a>
 
-  <main id="main" tabindex="-1">
+            <div class="cta-overlay">
+                <h2>Grow Your Skills Today</h2>
+                <p>Join the premier network of business leaders in Kampala.</p>
 
-    <h1>Fumu Sports Foundation – Site Plan</h1>
-
-    <!-- SITE NAME -->
-    <section id="site-name">
-      <h2>Site Name</h2>
-      <p><strong>Fumu Sports Foundation</strong></p>
-      <p>
-        The name "Fumu Sports Foundation" was chosen because it represents
-        a sports development organization dedicated to athlete growth,
-        community sports programs, youth empowerment, and charity initiatives.
-      </p>
-    </section>
+            </div>
+        </section>
 
     <!-- SITE PURPOSE -->
     <section id="purpose">
