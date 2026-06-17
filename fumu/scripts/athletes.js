@@ -1,21 +1,16 @@
 const container =
-    document.querySelector("#athletes-container");
-
-const searchInput =
-    document.querySelector("#search-input");
-
-let members = [];
+    document.getElementById("athletes-container");
 
 async function loadMembers() {
 
     try {
 
         const response =
-            await fetch("data/members.json");
+            await fetch("data/athletes.json");
 
         if (!response.ok) {
             throw new Error(
-                "Unable to load members."
+                "Unable to load athletes."
             );
         }
 
@@ -36,30 +31,30 @@ async function loadMembers() {
     }
 }
 
-function displayMembers(members) {
+function displayMembers(athletes) {
     container.innerHTML = "";
 
-    members.forEach(member => {
+    athletes.forEach(athlete => {
         const card = document.createElement("article");
         card.classList.add("member-card");
 
         card.innerHTML = `
             <img
-                src="images/members/${member.image}"
-                alt="${member.name}"
+                src="images/athletes/${athlete.image}"
+                alt="${athlete.name}"
                 loading="lazy"
                 width="300"
                 height="200">
 
-            <h3>${member.name}</h3>
+            <h3>${athlete.name}</h3>
 
-            <p>${member.tagline}</p>
+            <p>${athlete.tagline}</p>
 
-            <p>${member.phone}</p>
+            <p>${athlete.phone}</p>
 
             <button
                 class="details-btn"
-                data-id="${member.id}">
+                data-id="${athlete.id}">
                 View Details
             </button>
         `;
@@ -67,5 +62,5 @@ function displayMembers(members) {
         container.appendChild(card);
     });
 
-    attachModalEvents();
+    loadAthletes();
 }

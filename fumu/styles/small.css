@@ -374,6 +374,34 @@ footer p {
   margin-bottom: 0.2rem;
 }
 
+/* ── ATHLETES GRID ── */
+.athletes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.athletes-grid section {
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.athletes-grid img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* ── FOOTER ── */
+footer {
+  background-color: #0d3d27;
+  color: #b2dfc5;
+  text-align: center;
+  padding: 1.25rem 1rem;
+}
 #lastModified {
   font-size: 0.72rem;
   color: #7ab99a;
