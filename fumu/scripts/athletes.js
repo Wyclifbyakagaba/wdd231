@@ -36,15 +36,11 @@ async function loadMembers() {
     }
 }
 
-function displayMembers(data) {
-
+function displayMembers(members) {
     container.innerHTML = "";
 
-    data.forEach(member => {
-
-        const card =
-            document.createElement("article");
-
+    members.forEach(member => {
+        const card = document.createElement("article");
         card.classList.add("member-card");
 
         card.innerHTML = `
@@ -73,5 +69,3 @@ function displayMembers(data) {
 
     attachModalEvents();
 }
-
-loadMembers();
