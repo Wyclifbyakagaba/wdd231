@@ -1,0 +1,118 @@
+/* =====================================================================
+   FUMU SPORTS FOUNDATION — larger.css (desktop, min-width: 768px)
+===================================================================== */
+
+header.site-header {
+  padding: 1rem 3rem;
+}
+.brand img { width: 50px; height: 50px; }
+.brand-name { font-size: 1.25rem; }
+.brand-text p { font-size: 0.78rem; }
+
+#menu-btn { display: none; }
+
+nav#main-nav {
+  position: static;
+  max-height: none;
+  overflow: visible;
+  border-bottom: none;
+  background: transparent;
+}
+nav#main-nav ul {
+  flex-direction: row;
+  gap: 0.25rem;
+}
+nav#main-nav a {
+  border-top: none;
+  padding: 0.5rem 1rem;
+  font-size: 0.92rem;
+}
+nav#main-nav a[aria-current="page"] {
+  border-left: none;
+  border-bottom: 3px solid var(--gold);
+  padding-left: 1rem;
+}
+
+/* ── HERO ── */
+.hero {
+  padding: 5rem 3rem;
+  min-height: 460px;
+  display: flex;
+  align-items: center;
+}
+.hero h1 { font-size: 3.2rem; }
+.hero p { font-size: 1.15rem; max-width: 480px; }
+
+/* ── INFO STRIP ── */
+.info-strip {
+  flex-direction: row;
+  align-items: stretch;
+  padding: 2rem 3rem;
+}
+.info-card { flex: 1; align-items: center; }
+.cta-panel { flex: 1.1; text-align: left; }
+.cta-buttons { flex-direction: row; }
+.cta-panel h3 { font-size: 1.4rem; }
+
+/* ── SECTIONS ── */
+.section { padding: 4rem 3rem; }
+.section h2.section-title { font-size: 2rem; margin-bottom: 2.25rem; }
+
+/* ── SPORTS GRID ── */
+.sports-grid {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+.sport-card { height: 180px; }
+
+/* ── ATHLETES GRID ── */
+.athletes-grid {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+/* ── ABOUT ── */
+.page-hero { padding: 4rem 3rem; }
+.page-hero h1 { font-size: 2.6rem; }
+.about-section { padding: 3rem 3rem; max-width: 900px; margin: 0 auto; }
+.team-grid { grid-template-columns: repeat(2, 1fr); gap: 1.25rem; }
+
+/* ── DIRECTORY ── */
+.directory-controls {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.directory-controls input,
+.directory-controls select { width: auto; min-width: 220px; }
+.view-toggle { width: auto; }
+.view-toggle button { flex: none; padding: 0.5rem 1.2rem; }
+
+#directory-container.grid-view {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+/* ── CONTACT ── */
+.contact-grid {
+  flex-direction: row;
+  padding: 4rem 3rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  align-items: flex-start;
+}
+.contact-form { flex: 1.2; }
+.contact-info { flex: 1; }
+
+/* ── FOOTER ── */
+footer.site-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.25rem 3rem;
+  text-align: left;
+}
+footer.site-footer .footer-links { margin-top: 0; }
+.social-links { margin-top: 0; }

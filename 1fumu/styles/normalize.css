@@ -1,0 +1,8 @@
+/* Minimal normalize */
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body, h1, h2, h3, p, ul, figure { margin: 0; }
+ul { padding: 0; }
+img { max-width: 100%; display: block; }
+a { color: inherit; }
+button { font: inherit; }

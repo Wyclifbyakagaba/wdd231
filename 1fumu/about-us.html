@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>About Us | Fumu Sports Foundation</title>
+
+  <meta name="author" content="Byakagaba Wycliff">
+  <meta name="description" content="About Fumu Sports Foundation — our mission, vision, team and contact information.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="About Fumu Sports Foundation">
+  <meta property="og:description" content="Learn about Fumu Sports Foundation mission, vision and programs.">
+  <meta property="og:url" content="https://wyclifbyakagaba.github.io/wdd231/fumu/about-us.html">
+  <meta property="og:image" content="https://wyclifbyakagaba.github.io/wdd231/fumu/images/og-image.webp">
+  <meta property="og:type" content="website">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://wyclifbyakagaba.github.io/wdd231/fumu/about-us.html">
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.webp" type="image/webp">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css" media="screen and (min-width: 768px)">
+
+  <!-- JS -->
+  <script src="scripts/main.js" defer></script>
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Fumu Sports Foundation home">
+      <img src="images/favicon.webp" alt="Fumu Sports Foundation Logo">
+      <div class="brand-text">
+        <p class="brand-name">Fumu Sports Foundation</p>
+        <p>Empowering Youth Through Sports</p>
+      </div>
+    </a>
+
+    <button id="menu-btn" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation menu">&#9776;</button>
+
+    <nav id="main-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about-us.html" aria-current="page">About</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="contacts.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <section class="page-hero">
+      <h1>About Us</h1>
+      <p>Our mission, vision, and the people behind Fumu Sports Foundation.</p>
+    </section>
+
+    <section class="about-section">
+      <h2>Our Mission</h2>
+      <p>Fumu Sports Foundation exists to develop young athletes across Uganda through structured training, mentorship, education, and competition. We believe sport is one of the most powerful tools for building confidence, discipline, and opportunity in the lives of young people.</p>
+
+      <h2>Our Vision</h2>
+      <p>To become East Africa's leading grassroots sports foundation, producing not only competitive athletes, but well-rounded young leaders who give back to their communities.</p>
+
+      <h2>What We Do</h2>
+      <ul class="about-list">
+        <li>Run football, basketball, boxing, and athletics training programs for youth and adults</li>
+        <li>Track and publish athlete rankings at local, regional, and international levels</li>
+        <li>Provide free sports access and mentorship to street children in Kampala</li>
+        <li>Partner with sponsors and businesses to fund equipment, travel, and coaching</li>
+      </ul>
+
+      <h2>Our Team</h2>
+      <div class="team-grid">
+        <div class="team-card">
+          <img src="images/athlete-brian.webp" alt="Brian Okello">
+          <div>
+            <h3>Brian Okello</h3>
+            <p>Football Program Lead</p>
+          </div>
+        </div>
+        <div class="team-card">
+          <img src="images/athlete-aisha.webp" alt="Aisha Nankya">
+          <div>
+            <h3>Aisha Nankya</h3>
+            <p>Athletics Coach</p>
+          </div>
+        </div>
+        <div class="team-card">
+          <img src="images/athlete-isaac.webp" alt="Isaac Muwanguzi">
+          <div>
+            <h3>Isaac Muwanguzi</h3>
+            <p>Basketball Coach</p>
+          </div>
+        </div>
+        <div class="team-card">
+          <img src="images/athlete-shakira.webp" alt="Shakira Nalubega">
+          <div>
+            <h3>Shakira Nalubega</h3>
+            <p>Boxing Trainer</p>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="section-spacer">Get in Touch</h2>
+      <p>Have a question about our programs or want to partner with us?</p>
+      <p>📧 <a href="mailto:info@fumusports.org">info@fumusports.org</a></p>
+      <p>📞 <a href="tel:+256701234567">+256 701 234 567</a></p>
+      <p><a class="btn btn-navy" href="index.html">Return to Home</a></p>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Fumu Sports Foundation</p>
+    <p id="lastModified"></p>
+    <div class="footer-links">
+      <a href="https://github.com/wyclifbyakagaba/wdd231" target="_blank" rel="noopener">Attributions</a>
+      <a href="about-us.html">Project Video</a>
+    </div>
+
+    <div class="social-links">
+      <a href="https://wa.me/256701234567" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
+        <img src="images/whatsapp.webp" alt="WhatsApp" width="28" height="28" loading="lazy">
+      </a>
+      <a href="https://www.tiktok.com/@fumusportsfoundation" target="_blank" rel="noopener" aria-label="Follow us on TikTok">
+        <img src="images/tiktok.webp" alt="TikTok" width="28" height="28" loading="lazy">
+      </a>
+    </div>
+  </footer>
+
+</body>
+</html>
