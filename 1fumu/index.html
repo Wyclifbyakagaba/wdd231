@@ -18,7 +18,7 @@
   <meta property="og:type" content="website">
 
   <!-- Favicon -->
-  <link rel="icon" href="images/favicon.webp" type="image/webp">
+  <link rel="icon" href="images/favicon.webp.jpg" type="image/webp">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -38,47 +38,58 @@
 <body>
 
 <header>
-  <img src="images/fumu.jpg" alt="Fumu Sports Foundation Logo" class="logo">
+  <img src="images/fumu.svg" alt="Fumu Sports Foundation Logo" class="logo">
 
   <nav>
     <ul>
-      <li><a href="index.html">Home</a></li>
+      <li><a class="active" href="index.html">Home</a></li>
       <li><a href="join.html">Join</a></li>
       <li><a href="directory.html">Directory</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a class="active" href="discover.html">Discover</a></li>
-    </ul>
+      <li><a href="contact.html">Contact us</a></li>
+      </ul>
   </nav>
 
   <h1>Discover Fumu Sports Foundation</h1>
 </header>
 
 <main>
-   <!-- LOCAL STORAGE MESSAGE -->
+    <main>
+
+  <!-- LOCAL STORAGE MESSAGE -->
   <section class="visitor">
-    <h2>welcome to fumu sports foundation</h2>
+    <h2>Welcome to Fumu Sports Foundation</h2>
     <p id="visitMessage"></p>
   </section>
 
   <!-- INTRO -->
   <section class="intro">
-    <h2>learn about fumu sports foundation</h2>
+    <h2>Learn About Fumu Sports Foundation</h2>
     <p>
       Kampala is Uganda’s capital city and a growing hub for tourism, culture,
       business, and investment opportunities.
     </p>
   </section>
 
-  <!-- GRID CONTAINER (JSON CARDS) -->
+  <!-- CTA SECTION -->
+  <section class="cta">
+    <h2>Join Our Mission</h2>
+    <p>
+      Help us empower young athletes through sports, mentorship, and education.
+    </p>
+
+    <a href="join.html" class="cta-btn">Become a Member</a>
+    <a href="donate.html" class="cta-btn secondary">Donate Now</a>
+  </section>
+
+  <!-- GRID CONTAINER -->
   <section class="discover">
     <h2>City Highlights</h2>
-    <div class="view-buttons">
-            <button id="gridBtn">Grid View</button>
-            <button id="listBtn">List View</button>
-      </div>
-        <div id="places-container" class="grid-layout"></div>
-
+    ...
   </section>
+
+</main>
+  </section>
+
   
 
 </main>
