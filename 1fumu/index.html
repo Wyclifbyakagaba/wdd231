@@ -1,142 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Fumu Sports Foundation | Empowering Youth Through Sports</title>
+  <title>fumu sports foundation | Home page</title>
 
   <meta name="author" content="Byakagaba Wycliff">
-  <meta name="description" content="Fumu Sports Foundation builds young champions in Uganda through football, basketball, boxing and athletics training.">
+  <meta name="description" content="Discover Kampala attractions, culture, business districts, and investment opportunities.">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Fumu Sports Foundation | Empowering Youth">
-  <meta property="og:description" content="Building champions through training, mentorship and opportunity across Uganda.">
-  <meta property="og:url" content="https://wyclifbyakagaba.github.io/wdd231/fumu/index.html">
-  <meta property="og:image" content="https://wyclifbyakagaba.github.io/wdd231/fumu/images/og-image.webp">
+  <meta property="og:title" content="Fumu Sports Foundation | Chamber of Commerce">
+  <meta property="og:description" content="Explore Fumu Sports Foundation's impact on youth development through sports, mentorship, and opportunity.">
+  <meta property="og:url" content="https://wyclifbyakagaba.github.io/wdd231/chamber/discover.html">
+  <meta property="og:image" content="https://wyclifbyakagaba.github.io/wdd231/chamber/images/chamber.jpg">
   <meta property="og:type" content="website">
 
-  <!-- Canonical -->
-  <link rel="canonical" href="https://wyclifbyakagaba.github.io/wdd231/fumu/index.html">
-
   <!-- Favicon -->
-  <link rel="icon" href="images/favicon.webp" type="image/webp">
+  <link rel="icon" href="images/favicon.jpg" type="image/jpeg">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
   <!-- CSS -->
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/small.css">
-  <link rel="stylesheet" href="styles/larger.css" media="screen and (min-width: 768px)">
+  <link rel="stylesheet" href="styles/larger.css">
 
-  <!-- JS -->
-  <script src="scripts/main.js" defer></script>
-  <script src="scripts/home.js" defer></script>
+ <!-- JS -->
+  <script src="scripts/directory.js" defer></script>
+
 </head>
+
 <body>
 
-  <a class="skip-link" href="#main">Skip to content</a>
+<header>
+  <img src="images/fumu.jpg" alt="Fumu Sports Foundation Logo" class="logo">
 
-  <header class="site-header">
-    <a class="brand" href="index.html" aria-label="Fumu Sports Foundation home">
-      <img src="images/favicon.webp" alt="Fumu Sports Foundation Logo">
-      <div class="brand-text">
-        <p class="brand-name">Fumu Sports Foundation</p>
-        <p>Empowering Youth Through Sports</p>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="join.html">Join</a></li>
+      <li><a href="directory.html">Directory</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a class="active" href="discover.html">Discover</a></li>
+    </ul>
+  </nav>
+
+  <h1>Discover Fumu Sports Foundation</h1>
+</header>
+
+<main>
+   <!-- LOCAL STORAGE MESSAGE -->
+  <section class="visitor">
+    <h2>welcome to fumu sports foundation</h2>
+    <p id="visitMessage"></p>
+  </section>
+
+  <!-- INTRO -->
+  <section class="intro">
+    <h2>learn about fumu sports foundation</h2>
+    <p>
+      Kampala is Uganda’s capital city and a growing hub for tourism, culture,
+      business, and investment opportunities.
+    </p>
+  </section>
+
+  <!-- GRID CONTAINER (JSON CARDS) -->
+  <section class="discover">
+    <h2>City Highlights</h2>
+    <div class="view-buttons">
+            <button id="gridBtn">Grid View</button>
+            <button id="listBtn">List View</button>
       </div>
-    </a>
+        <div id="places-container" class="grid-layout"></div>
 
-    <button id="menu-btn" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation menu">&#9776;</button>
+  </section>
+  
 
-    <nav id="main-nav" aria-label="Main navigation">
-      <ul>
-        <li><a href="index.html" aria-current="page">Home</a></li>
-        <li><a href="about-us.html">About</a></li>
-        <li><a href="directory.html">Directory</a></li>
-        <li><a href="contacts.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+</main>
 
-  <main id="main">
-
-    <!-- HERO -->
-    <section class="hero">
-      <img class="hero-bg" src="images/hero-training.webp" alt="" loading="lazy">
-      <div class="hero-content">
-        <h1>Empowering Youth<br>Through Sports</h1>
-        <p>Building champions through training, mentorship and opportunity.</p>
-        <a class="btn btn-gold" href="directory.html">View Athletes</a>
-      </div>
-    </section>
-
-    <!-- INFO STRIP -->
-    <section class="info-strip">
-      <div class="info-card">
-        <span class="info-icon" aria-hidden="true">👤</span>
-        <div>
-          <h3>Welcome Back</h3>
-          <p id="visit-count">Loading visit info…</p>
-          <p id="last-visit"></p>
-        </div>
-      </div>
-
-      <div class="info-card">
-        <span class="info-icon" aria-hidden="true">🎯</span>
-        <div>
-          <h3>Our Mission</h3>
-          <p>Fumu Sports Foundation develops young athletes through training, mentorship, education, and competition opportunities.</p>
-        </div>
-      </div>
-
-      <div class="cta-panel">
-        <h3>Get Involved with<br>Fumu Sports Foundation</h3>
-        <p>Join us in empowering young athletes through sports, mentorship, and opportunity.</p>
-        <div class="cta-buttons">
-          <a class="btn btn-outline" href="directory.html">View Athletes</a>
-          <a class="btn btn-gold" href="contacts.html">Contact Us</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- SPORTS PROGRAMS -->
-    <section class="section">
-      <h2 class="section-title">Sports Programs</h2>
-      <div id="sports-grid" class="sports-grid" aria-label="Sports programs offered">
-        <p>Loading sports programs…</p>
-      </div>
-    </section>
-
-    <!-- FEATURED ATHLETES -->
-    <section class="section section-mist">
-      <h2 class="section-title">Featured Athletes</h2>
-      <div id="athletes-grid" class="athletes-grid" aria-label="Featured athletes">
-        <p>Loading athletes…</p>
-      </div>
-    </section>
-
-  </main>
-
-  <footer class="site-footer">
-    <p>&copy; <span id="year"></span> Fumu Sports Foundation</p>
-    <p id="lastModified"></p>
-    <div class="footer-links">
-      <a href="https://github.com/wyclifbyakagaba/wdd231" target="_blank" rel="noopener">Attributions</a>
-      <a href="about-us.html">Project Video</a>
-    </div>
-
-    <div class="social-links">
-      <a href="https://wa.me/256701234567" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
-        <img src="images/whatsapp.webp" alt="WhatsApp" width="28" height="28" loading="lazy">
-      </a>
-      <a href="https://www.tiktok.com/@fumusportsfoundation" target="_blank" rel="noopener" aria-label="Follow us on TikTok">
-        <img src="images/tiktok.webp" alt="TikTok" width="28" height="28" loading="lazy">
-      </a>
-    </div>
-  </footer>
+<footer>
+  <p>&copy; <span id="year"></span> Kampala Chamber | WDD 231</p>
+  <p id="lastModified"></p>
+</footer>
 
 </body>
 </html>
