@@ -124,7 +124,12 @@
   h3 {
     font-size: 1.5rem;
   }
-
+  @media (min-width: 768px) {
+    .card img:hover {
+        transform: scale(1.05);
+        transition: transform .3s ease;
+    }
+  }
   /* =========================
        THANK YOU PAGE
        ========================= */

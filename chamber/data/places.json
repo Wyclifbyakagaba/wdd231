@@ -3,56 +3,56 @@
     "name": "Kasubi Tombs",
     "address": "Kasubi Hill, Kampala",
     "description": "A UNESCO World Heritage Site and burial grounds of Buganda kings showcasing rich cultural heritage and traditional architecture.",
-    "image": "images/kasubi-tombs.webp.jpg",
+    "image": "images/kasubi-tombs.webp.",
     "url": "https://whc.unesco.org/en/list/1022/"
   },
   {
     "name": "Lake Victoria",
     "address": "Entebbe, Uganda",
     "description": "Africa’s largest lake offering boat cruises, fishing, and beautiful scenic views along the shoreline.",
-    "image": "images/lake-victoria.webp.jpg",
+    "image": "images/lake-victoria.webp.",
     "url": "https://en.wikipedia.org/wiki/Lake_Victoria"
   },
   {
     "name": "Uganda Museum",
     "address": "Kitante Hill, Kampala",
     "description": "The oldest museum in East Africa showcasing Uganda’s cultural, historical, and natural heritage.",
-    "image": "images/uganda-museum.webp.jpg",
+    "image": "images/uganda-museum.webp.",
     "url": "https://en.wikipedia.org/wiki/Uganda_Museum"
   },
   {
     "name": "Bahai Temple",
     "address": "Kikaya Hill, Kampala",
     "description": "The only Bahai House of Worship in Africa surrounded by peaceful gardens and panoramic city views.",
-    "image": "images/bahai-temple.webp.jpg",
+    "image": "images/bahai-temple.webp.",
     "url": "https://en.wikipedia.org/wiki/Bah%C3%A1%CA%BC%C3%AD_Faith_in_Uganda"
   },
   {
     "name": "Gaddafi National Mosque",
     "address": "Old Kampala",
     "description": "A major religious landmark offering panoramic views of Kampala from its minaret.",
-    "image": "images/gaddafi-mosque.webp.jpg",
+    "image": "images/gaddafi-mosque.webp.",
     "url": "https://en.wikipedia.org/wiki/Uganda_National_Mosque"
   },
   {
     "name": "Wandegeya Market",
     "address": "Wandegeya, Kampala",
     "description": "A vibrant local market filled with fresh produce, street food, and everyday Ugandan commerce.",
-    "image": "images/wandegeya-market.webp.jpg",
+    "image": "images/wandegeya-market.webp.",
     "url": "https://www.kcca.go.ug"
   },
   {
     "name": "Entebbe Botanical Gardens",
     "address": "Entebbe, Uganda",
     "description": "A peaceful nature reserve with exotic plants, birds, and lakeside scenery.",
-    "image": "images/botanical-gardens.webp.jpg",
+    "image": "images/botanical-gardens.webp.",
     "url": "https://en.wikipedia.org/wiki/Entebbe_Botanical_Gardens"
   },
   {
     "name": "Nakasero Market",
     "address": "Nakasero, Kampala",
     "description": "A busy central market known for fruits, spices, and vibrant local trading culture.",
-    "image": "images/nakasero-market.webp.jpg",
+    "image": "images/nakasero-market.webp.",
     "url": "https://www.kcca.go.ug"
   }
 ]

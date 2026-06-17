@@ -2,7 +2,15 @@
    CHAMBER COMMERCE WEBSITE - DESKTOP STYLES
    ========================================== */
 
-@media screen and (min-width: 768px) {
+   @media (min-width: 768px) {
+  .card {
+    grid-template-areas:
+      "image title"
+      "image address"
+      "image description"
+      "image button";
+  }
+}
 
     /* =========================
        HEADER & NAVIGATION
