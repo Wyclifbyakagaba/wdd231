@@ -17,19 +17,19 @@
    <meta property="og:type" content="website">
 
     <link rel="icon" href="images/favicon.png" type="image/webp">
-
     <link rel="stylesheet" href="styles/small1.css">
     <link rel="stylesheet" href="styles/large1.css">
 
     <script type="module" src="scripts/main.js"></script>
 </head>
 
-<body>
+<>
 
   <header> 
     <img src="images/favicon.svg.jpg" alt="fumu Sports Foundation Logo" class="logo">
-
-    <button id="menu-btn" aria-label="Toggle menu">☰</button>
+        <p>  FUMU  SPORTS FOUNDATION   </p>
+    
+   <button id="menu-btn" aria-label="Toggle menu">☰</button>
 
     <nav id="main-nav">
         <ul>
@@ -63,8 +63,8 @@
         </div>
     </section>
 
-</main>
- </body>
+
+ 
   <!-- WELCOME (LOCAL STORAGE) -->
     <section class="welcome-section">
         <h2>Welcome Back</h2>
@@ -81,21 +81,38 @@
     </section>
 
  <!-- PROGRAMS -->
-    <section>
-        <h2>Sports Programs</h2>
+   <section>
+    <h2>Sports Programs</h2>
 
-        <div class="program-grid">
-            <article><h3>Football</h3></article>
-            <article><h3>Basketball</h3></article>
-            <article><h3>Boxing</h3></article>
-            <article><h3>Athletics</h3></article>
-        </div>
-    </section>
+    <div class="program-grid">
+
+        <article class="program-card">
+            <img src="images/football.webp" alt="Football" loading="lazy">
+            <h3>Football</h3>
+        </article>
+
+        <article class="program-card">
+            <img src="images/basketball.webp" alt="Basketball" loading="lazy">
+            <h3>Basketball</h3>
+        </article>
+
+        <article class="program-card">
+            <img src="images/boxing.webp" alt="Boxing" loading="lazy">
+            <h3>Boxing</h3>
+        </article>
+
+        <article class="program-card">
+            <img src="images/athletics.webp" alt="Athletics" loading="lazy">
+            <h3>Athletics</h3>
+        </article>
+
+    </div>
+</section> 
 
     <!-- DYNAMIC DATA (15+ ITEMS REQUIRED) -->
     <section>
         <h2>Featured Athletes</h2>
-        <div id="athletes-container"></div>
+        <div id="athletes-container" class="athletes-grid"></div>
     </section>
 
     <!-- MODAL -->

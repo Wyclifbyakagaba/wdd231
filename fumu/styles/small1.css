@@ -29,7 +29,13 @@ header {
   justify-content: space-between;
   padding: 1rem;
 }
-
+header p {
+  color: white;
+  font-weight: 700;
+  font-size: 1.1rem;
+  flex-grow: 1;
+  margin-left: 1rem;
+}
 .logo {
   width: 55px;
   height: 55px;
@@ -150,28 +156,61 @@ section {
 /* =========================
    PROGRAMS
 ========================= */
+
 .program-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
+    display: grid;
+    gap: 1rem;
 }
 
-.program-grid article {
-  background: white;
-  padding: 1rem;
-  border-radius: 8px;
-  border: 1px solid #cde8d8;
+.program-card {
+    background: white;
+    padding:1rem;
+    border: 1px solid #cde8d8;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,.1);
 }
+
+.program-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.program-card h3 {
+    padding: 1rem;
+}
+
+
 
 /* =========================
    ATHLETES CONTAINER
 ========================= */
 #athletes-container {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1rem;
 }
 
+.member-card {
+    background: white;
+    border: 1px solid #cde8d8;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.member-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.member-card h3 {
+    margin: 0.5rem 0;
+}
 /* =========================
    MODAL
 ========================= */

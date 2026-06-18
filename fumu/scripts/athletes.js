@@ -62,5 +62,8 @@ function displayMembers(athletes) {
         container.appendChild(card);
     });
 
+    //LOAD THE ATHLETE DETAILS
+    const buttons =
+        document.querySelectorAll(".details-btn");
     loadAthletes();
 }
