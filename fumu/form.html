@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Thank You | Fumu Sports Foundation</title>
+
+    <meta name="description"
+          content="Thank you for contacting Fumu Sports Foundation.">
+
+    <link rel="stylesheet" href="styles/small1.css">
+</head>
+
+<body>
+
+<header>
+    <img src="images/favicon.svg.png"
+         alt="Fumu Sports Foundation Logo"
+         class="logo">
+
+    <p>FUMU SPORTS FOUNDATION</p>
+</header>
+
+<main class="thankyou-page">
+
+    <section class="thankyou-card">
+
+        <h1>Thank You!</h1>
+
+        <p>
+            Your information has been received successfully.
+        </p>
+
+        <div class="submitted-info">
+
+            <p>
+                <strong>Name:</strong>
+                <span id="firstName"></span>
+            </p>
+
+            <p>
+                <strong>Email:</strong>
+                <span id="email"></span>
+            </p>
+
+            <p>
+                <strong>Phone:</strong>
+                <span id="phone"></span>
+            </p>
+
+            <p>
+                <strong>Sport:</strong>
+                <span id="sport"></span>
+            </p>
+
+        </div>
+
+        <a href="index.html" class="button">
+            Return Home
+        </a>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>
+        &copy; <span id="year"></span>
+        Fumu Sports Foundation
+    </p>
+
+    <p id="lastModified"></p>
+</footer>
+
+<script>
+const params = new URLSearchParams(window.location.search);
+
+document.getElementById("firstName").textContent =
+    params.get("firstName") || "Not provided";
+
+document.getElementById("email").textContent =
+    params.get("email") || "Not provided";
+
+document.getElementById("phone").textContent =
+    params.get("phone") || "Not provided";
+
+document.getElementById("sport").textContent =
+    params.get("sport") || "Not provided";
+
+document.getElementById("year").textContent =
+    new Date().getFullYear();
+
+document.getElementById("lastModified").textContent =
+    "Last Modified: " + document.lastModified;
+</script>
+
+</body>
+</html>

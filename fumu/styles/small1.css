@@ -230,3 +230,46 @@ footer {
   text-align: center;
   padding: 1.2rem;
 }
+/* THANK YOU PAGE */
+
+.thankyou-page {
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.thankyou-card {
+    background: white;
+    max-width: 600px;
+    width: 100%;
+    padding: 2rem;
+    border-radius: 12px;
+    border-top: 6px solid #1f6f4a;
+    box-shadow: 0 4px 12px rgba(0,0,0,.1);
+    text-align: center;
+}
+
+.thankyou-card h1 {
+    color: #1f6f4a;
+    margin-bottom: 1rem;
+}
+
+.submitted-info {
+    margin: 2rem 0;
+    text-align: left;
+}
+
+.submitted-info p {
+    padding: .75rem;
+    border-bottom: 1px solid #d7f5e5;
+}
+
+.submitted-info strong {
+    color: #0d3d27;
+}
+
+.thankyou-card .button {
+    margin-top: 1rem;
+}
