@@ -1,35 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Fumu Sports Foundation | Home page</title>
 
-    <meta name="description" content="Fumu Sports Foundation supports youth athletes through training, mentorship, competitions, and sports development in Uganda.">
+    <meta name="description"
+        content="Fumu Sports Foundation supports youth athletes through training, mentorship, competitions, and sports development in Uganda.">
     <meta name="author" content="Byakagaba Wycliff">
 
     <!-- Open Graph -->
-   <meta property="og:title" content="Fumu Sports Foundation">
-   <meta property="og:description" content="Supporting youth athletes through sports development, training, and community programs.">
-   <meta property="og:image" content="https://wyclifbyakagaba.github.io/wdd231/fumu/images/fumu.webp.jpg">
-   <meta property="og:url" content="https://wyclifbyakagaba.github.io/wdd231/fumu/index.html">
-   <meta property="og:type" content="website">
+    <meta property="og:title" content="Fumu Sports Foundation">
+    <meta property="og:description"
+        content="Supporting youth athletes through sports development, training, and community programs.">
+    <meta property="og:image" content="https://wyclifbyakagaba.github.io/wdd231/fumu/images/favicon.png">
+    <meta property="og:url" content="https://wyclifbyakagaba.github.io/wdd231/fumu/index.html">
+    <meta property="og:type" content="website">
 
-    <link rel="icon" href="images/favicon.png" type="image/webp">
+    <link rel="icon" href="images/favicon.png" type="image/png">
     <link rel="stylesheet" href="styles/small1.css">
     <link rel="stylesheet" href="styles/large1.css">
 
     <script type="module" src="scripts/main.js"></script>
 </head>
-
-<>
-
-  <header> 
+<body>
+     <a class="skip-link" href="#main-content">Skip to Main Content</a>
+<header>
     <img src="images/favicon.svg.jpg" alt="fumu Sports Foundation Logo" class="logo">
-        <p>  FUMU  SPORTS FOUNDATION   </p>
-    
-   <button id="menu-btn" aria-label="Toggle menu">☰</button>
+    <p> FUMU SPORTS FOUNDATION </p>
+
+    <button id="menu-btn" aria-label="Toggle menu">☰</button>
 
     <nav id="main-nav">
         <ul>
@@ -39,10 +41,10 @@
             <li><a href="contacts.html">Contact</a></li>
         </ul>
     </nav>
-  </header>
+</header>
 
-  <main>
- <!-- HERO -->
+<main>
+    <!-- HERO -->
     <section class="hero">
         <img src="images/hero.small.webp" alt="Athletes training" loading="lazy">
 
@@ -52,7 +54,7 @@
             <a href="directory.html" class="button">View Athletes</a>
         </div>
     </section>
-      <!-- CTA -->
+    <!-- CTA -->
     <section class="cta">
         <h2>Get Involved with Fumu Sports Foundation</h2>
         <p>Join us in empowering young athletes through sports, mentorship, and opportunity.</p>
@@ -64,15 +66,15 @@
     </section>
 
 
- 
-  <!-- WELCOME (LOCAL STORAGE) -->
+
+    <!-- WELCOME (LOCAL STORAGE) -->
     <section class="welcome-section">
         <h2>Welcome Back</h2>
         <p id="visit-msg"></p>
     </section>
 
     <!-- MISSION -->
-    <section>
+    <section class="mission-section">
         <h2>Our Mission</h2>
         <p>
             Fumu Sports Foundation develops young athletes through training, mentorship,
@@ -80,37 +82,41 @@
         </p>
     </section>
 
- <!-- PROGRAMS -->
-   <section>
-    <h2>Sports Programs</h2>
+    <!-- PROGRAMS -->
+    <section class="sports-section">
+        <h2>Sports Programs</h2>
 
-    <div class="program-grid">
+        <div class="sports-grid">
 
-        <article class="program-card">
-            <img src="images/football.webp" alt="Football" loading="lazy">
-            <h3>Football</h3>
-        </article>
+            <article class="sports-card">
+                <img src="images/football.webp" alt="Football boot beside a ball on grass" loading="lazy">
+                <h3>Football</h3>
+            </article>
 
-        <article class="program-card">
-            <img src="images/basketball.webp" alt="Basketball" loading="lazy">
-            <h3>Basketball</h3>
-        </article>
+            <article class="sports-card">
+                <img src="images/basketball.webp" alt="Basketball and hoop net" loading="lazy">
+                <h3>Basketball</h3>
+            </article>
 
-        <article class="program-card">
-            <img src="images/boxing.webp" alt="Boxing" loading="lazy">
-            <h3>Boxing</h3>
-        </article>
+            <article class="sports-card">
+                <img src="images/boxing.webp" alt="Boxing" loading="lazy">
+                <h3>Boxing</h3>
+            </article>
 
-        <article class="program-card">
-            <img src="images/athletics.webp" alt="Athletics" loading="lazy">
-            <h3>Athletics</h3>
-        </article>
+            <article class="sports-card">
+                <img src="images/athletics.webp" alt="Sprinter starting on a running track" loading="lazy">
+                <h3>Athletics</h3>
+            </article>
 
-    </div>
-</section> 
+            <article class="sports-card">
+                <img src="images/boxing.jpg" alt="Boxing red gloves in a ring" loading="lazy">
+                <h3>Boxing</h3>
+            </article>
+        </div>
+    </section>
 
     <!-- DYNAMIC DATA (15+ ITEMS REQUIRED) -->
-    <section>
+    <section class="athletes-section">
         <h2>Featured Athletes</h2>
         <div id="athletes-container" class="athletes-grid"></div>
     </section>
@@ -132,4 +138,5 @@
 </footer>
 
 </body>
+
 </html>

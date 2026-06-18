@@ -1,9 +1,30 @@
 {
   "sports": [
-    { "id": "football", "name": "Football", "image": "images/football.webp", "alt": "Football boot beside a ball on grass" },
-    { "id": "basketball", "name": "Basketball", "image": "images/basketball.webp", "alt": "Basketball and hoop net" },
-    { "id": "boxing", "name": "Boxing", "image": "images/boxing.webp", "alt": "Red boxing gloves in a ring" },
-    { "id": "athletics", "name": "Athletics", "image": "images/athletics.webp", "alt": "Sprinter starting on a running track" }
+    {
+     "id": "football", 
+    "name": "Football", 
+    "image": "images/football.webp", 
+    "alt": "Football boot beside a ball on grass" 
+  },
+    { 
+      "id": "basketball", 
+      "name": "Basketball",
+     "image": "images/basketball.webp", 
+     "alt": "Basketball and hoop net"
+     },
+    { 
+      "id": "boxing", 
+      "name": "Boxing", 
+      "image": "images/boxing.webp", 
+      "alt": "Red boxing gloves in a ring" 
+    },
+    { 
+      "id": "athletics", 
+      "name": "Athletics", 
+      "image": "images/athletics.webp", 
+      "alt": "Sprinter starting on a running track" 
+    },
+  
   ],
 
   "athletes": [
